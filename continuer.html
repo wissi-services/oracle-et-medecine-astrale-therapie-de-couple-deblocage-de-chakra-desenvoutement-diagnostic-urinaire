@@ -6,69 +6,177 @@
 
   <style>
     body {
-      background-image: url("image(2).jpg");
-      color: lime;
+      margin: 0;
+      min-height: 100vh;
+      background: black;
+      color: red;
       font-family: "Times New Roman", serif;
-      text-align: center;
       font-size: 22px;
+      text-align: center;
     }
 
     .page {
       width: 90%;
       max-width: 900px;
       margin: 30px auto;
-      padding: 25px;
+      padding: 30px;
+
+      background-image: url("image(2).jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
       border: 8px ridge red;
-      background: #111;
+      box-shadow: 0 0 35px red;
     }
 
     h1 {
-      color: yellow;
-      font-size: 55px;
-      text-shadow: 4px 4px red;
+      color: red;
+      font-size: 60px;
+      text-shadow: 3px 3px black, 0 0 15px red;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 18px;
+      border: 4px double red;
+    }
+
+    h2 {
+      color: black;
+      background: red;
+      padding: 12px;
+      border: 4px dotted black;
+      text-transform: uppercase;
+    }
+
+    p {
+      line-height: 1.5;
+      background: rgba(0, 0, 0, 0.82);
+      color: #ffcccc;
+      padding: 15px;
+      border: 2px solid red;
     }
 
     .bouton {
       display: block;
+      width: 85%;
+      max-width: 650px;
       margin: 25px auto;
       padding: 18px;
-      width: 80%;
+
       background: red;
-      color: yellow;
+      color: black;
       text-decoration: none;
       font-weight: bold;
-      border: 5px outset yellow;
-      border-radius: 40px;
+      font-size: 26px;
+
+      border: 5px outset #ff0000;
+      border-radius: 999px;
+      box-shadow: 6px 6px 0 black;
     }
 
-    a {
-      color: cyan;
+    .bouton:hover {
+      background: black;
+      color: red;
+      border: 5px inset red;
+      box-shadow: 0 0 20px red;
+    }
+
+    .warning {
+      margin-top: 35px;
+      padding: 18px;
+      background: black;
+      color: red;
+      border: 5px dashed red;
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .retour {
+      margin-top: 25px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 2px solid red;
+    }
+
+    .retour a {
+      color: red;
+      font-weight: bold;
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
   <div class="page">
+
     <h1>CONTINUER VERS LA LUMIÈRE</h1>
 
     <p>
-      Vous êtes maintenant autorisée à accéder aux services supérieurs de l’Oracle.
+      Vous êtes maintenant entrée dans le second cercle de la révélation.
+      Ici, l’Oracle examine les signes, les silences, les mauvaises décisions,
+      les devis douteux et les vibrations administratives qui entourent votre existence.
     </p>
 
-    <a class="bouton" href="#">Diagnostic astral</a>
-    <a class="bouton" href="#">Demande de devis spirituel</a>
-    <a class="bouton" href="#">Quiz de guérison</a>
-    <a class="bouton" href="#">Prendre rendez-vous</a>
-    <a class="bouton" href="#">Boutique unique</a>
-    
+    <p>
+      Avant de poursuivre, respirez profondément. La lumière ne juge pas.
+      Elle facture parfois, mais elle ne juge pas.
+    </p>
+
+    <h2>Choisissez votre service</h2>
+
+    <a class="bouton" href="#">
+      DIAGNOSTIC ASTRAL PERSONNALISÉ
+    </a>
+
+    <a class="bouton" href="#">
+      DEVIS DE DÉSENVOÛTEMENT
+    </a>
+
+    <a class="bouton" href="#">
+      QUIZ DE GUÉRISON FICTIVE
+    </a>
+
+    <a class="bouton" href="#">
+      RENDEZ-VOUS AVEC L’ORACLE
+    </a>
+
+    <h2>Diagnostic astral</h2>
 
     <p>
+      Le diagnostic astral permet d’analyser votre alignement intérieur,
+      votre niveau de confusion spirituelle, votre chakra vessie,
+      ainsi que votre capacité à recevoir des messages que personne n’a envoyés.
+    </p>
+
+    <h2>Devis spirituel</h2>
+
+    <p>
+      Le devis de désenvoûtement est établi selon plusieurs critères :
+      la gravité de votre aura, la densité de vos problèmes, le nombre de signes ignorés,
+      et la disponibilité émotionnelle de l’Oracle au moment de la demande.
+    </p>
+
+    <h2>Quiz de guérison fictive</h2>
+
+    <p>
+      Le quiz de guérison fictive vous permettra de savoir si vous êtes prête
+      à avancer vers la lumière, à reculer vers l’ombre, ou à rester exactement
+      au même endroit mais avec plus de vocabulaire mystique.
+    </p>
+
+    <div class="warning">
+      Ce site est parodique. Aucun diagnostic n’est médical. Aucun soin n’est réel.
+      Aucune guérison n’est garantie. La lumière est instable.
+    </div>
+
+    <p class="retour">
       <a href="trouver-la-voie.html">Retour à la voie</a>
     </p>
 
-    <p>
+    <p class="retour">
       <a href="index.html">Retour à l’accueil</a>
     </p>
+
   </div>
 </body>
 </html>
