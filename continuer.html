@@ -12,274 +12,209 @@
       background-image: url("ange.jpg");
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       background-attachment: fixed;
 
-      font-family: "Comic Sans MS", "Times New Roman", serif;
+      font-family: "Times New Roman", serif;
+      color: #f6e7b2;
       text-align: center;
-      color: yellow;
     }
 
-    .overlay {
+    .voile {
       min-height: 100vh;
-      background:
-        repeating-linear-gradient(
-          45deg,
-          rgba(255, 255, 255, 0.12),
-          rgba(255, 255, 255, 0.12) 2px,
-          rgba(255, 255, 0, 0.05) 2px,
-          rgba(255, 255, 0, 0.05) 6px
-        );
-      padding: 25px;
+      background: rgba(0, 0, 0, 0.72);
+      padding: 40px 20px;
     }
 
     .page {
-      width: 92%;
-      max-width: 950px;
-      margin: 25px auto;
-      padding: 20px;
+      max-width: 850px;
+      margin: auto;
+      padding: 35px 25px;
 
-      background: rgba(255, 255, 255, 0.45);
-      border: 10px ridge yellow;
+      background: rgba(8, 5, 12, 0.88);
+      border: 2px solid #9b1c1c;
       box-shadow:
-        0 0 20px white,
-        0 0 40px yellow,
-        0 0 70px #ff99ff;
+        0 0 25px rgba(255, 230, 150, 0.22),
+        inset 0 0 40px rgba(120, 0, 0, 0.35);
     }
 
     h1 {
-      font-size: 62px;
-      color: yellow;
+      font-size: 54px;
+      letter-spacing: 4px;
+      color: #f8d46b;
+      text-transform: uppercase;
+      margin: 10px 0 25px;
+
       text-shadow:
-        3px 3px red,
-        6px 6px #ff00ff,
-        0 0 25px white;
-      text-transform: uppercase;
-      margin: 20px 0;
-      background: linear-gradient(to right, #ff00cc, #ffff00, #00ffff);
-      border: 6px double white;
-      padding: 15px;
+        3px 3px 0 #4b0000,
+        0 0 20px rgba(255, 220, 120, 0.55);
     }
 
-    .blink {
-      animation: blink 0.8s infinite;
-    }
-
-    @keyframes blink {
-      0% { opacity: 1; }
-      50% { opacity: 0.2; }
-      100% { opacity: 1; }
-    }
-
-    .marquee-box {
-      background: yellow;
-      color: red;
-      border: 5px dashed red;
-      font-size: 24px;
-      font-weight: bold;
-      padding: 8px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-
-    .intro {
-      background: rgba(255, 255, 255, 0.75);
-      color: #7a007a;
-      border: 5px dotted #ff00cc;
-      padding: 18px;
-      font-size: 24px;
-      font-weight: bold;
+    .sous-titre {
+      font-size: 22px;
+      color: #d8c18b;
+      margin-bottom: 35px;
+      font-style: italic;
       line-height: 1.5;
-      text-shadow: 1px 1px white;
     }
 
-    .symboles {
-      font-size: 42px;
-      color: white;
-      text-shadow:
-        0 0 10px yellow,
-        0 0 20px white,
-        0 0 30px #ff00ff;
+    .symbole {
+      font-size: 38px;
+      color: #8b0000;
       margin: 25px 0;
+      text-shadow: 0 0 12px #ffcc66;
     }
 
-    .menu {
-      margin-top: 25px;
-      background: rgba(255, 255, 180, 0.65);
-      border: 7px groove #ff66cc;
-      padding: 20px;
+    .texte {
+      background: rgba(0, 0, 0, 0.55);
+      border: 1px solid #5c1111;
+      padding: 22px;
+      margin: 25px auto;
+      max-width: 720px;
+
+      color: #ead9a0;
+      font-size: 21px;
+      line-height: 1.6;
+      text-align: justify;
     }
 
-    .titre-menu {
+    h2 {
+      color: #f8d46b;
       font-size: 32px;
-      color: red;
-      background: yellow;
-      border: 4px solid red;
-      padding: 10px;
-      text-shadow: 2px 2px white;
       text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 35px;
+      border-bottom: 1px solid #7a1616;
+      padding-bottom: 10px;
     }
 
     .bouton {
       display: block;
-      width: 85%;
-      max-width: 650px;
-      margin: 22px auto;
-      padding: 18px;
+      max-width: 600px;
+      margin: 18px auto;
+      padding: 17px 25px;
 
-      background: linear-gradient(to bottom, #ffffff, #ffff66, #ff99ff);
-      color: #0000aa;
+      background: #7a0000;
+      color: #f8d46b;
       text-decoration: none;
-      font-size: 27px;
+      font-size: 24px;
       font-weight: bold;
+      letter-spacing: 1px;
 
-      border: 6px outset white;
-      border-radius: 50px;
+      border: 2px solid #d8b85f;
+      border-radius: 999px;
+
       box-shadow:
-        5px 5px 0 red,
-        0 0 20px white;
-      text-shadow: 2px 2px white;
+        0 0 12px rgba(255, 210, 90, 0.28),
+        inset 0 0 18px rgba(0, 0, 0, 0.45);
     }
 
     .bouton:hover {
-      background: linear-gradient(to bottom, #ff00ff, #ffff00, #ffffff);
-      color: red;
-      border: 6px inset yellow;
-      transform: rotate(-1deg) scale(1.03);
+      background: #3b0000;
+      color: white;
+      box-shadow:
+        0 0 20px rgba(255, 230, 150, 0.55),
+        inset 0 0 20px black;
     }
 
-    .bloc {
-      background: rgba(255, 255, 255, 0.78);
-      color: #4b0082;
-      border: 5px double #ff00cc;
-      margin: 25px auto;
-      padding: 18px;
-      font-size: 22px;
+    .avertissement {
+      margin: 35px auto 20px;
+      padding: 16px;
+      max-width: 700px;
+
+      background: rgba(0, 0, 0, 0.65);
+      border: 1px dashed #8b0000;
+      color: #bfa76b;
+      font-size: 15px;
       line-height: 1.5;
-      max-width: 820px;
-      font-weight: bold;
-    }
-
-    .mini-titre {
-      display: inline-block;
-      background: #ff00cc;
-      color: yellow;
-      padding: 8px 18px;
-      border: 4px solid yellow;
-      font-size: 28px;
-      text-shadow: 2px 2px red;
-      margin-bottom: 10px;
-    }
-
-    .warning {
-      background: yellow;
-      color: red;
-      border: 6px dashed red;
-      padding: 18px;
-      margin: 30px auto;
-      max-width: 850px;
-      font-size: 20px;
-      font-weight: bold;
-      text-transform: uppercase;
-      box-shadow: 0 0 20px white;
     }
 
     .retour {
-      margin: 22px;
-      font-size: 22px;
+      margin-top: 25px;
+      font-size: 19px;
     }
 
     .retour a {
-      color: white;
-      background: red;
-      padding: 10px 20px;
-      border: 4px outset yellow;
+      color: #d8b85f;
       text-decoration: none;
-      font-weight: bold;
-      text-shadow: 2px 2px black;
+      border-bottom: 1px solid #d8b85f;
     }
 
     .retour a:hover {
-      background: yellow;
-      color: red;
+      color: white;
+      border-bottom: 1px solid white;
     }
   </style>
 </head>
 
 <body>
-  <div class="overlay">
+  <div class="voile">
     <div class="page">
 
-      <div class="marquee-box">
-        <marquee behavior="alternate" scrollamount="8">
-          ATTENTION : LA LUMIÈRE VOUS A DÉTECTÉE
-        </marquee>
+      <div class="symbole">☉</div>
+
+      <h1>CONTINUER VERS LA LUMIÈRE</h1>
+
+      <p class="sous-titre">
+        Vous avez vu la première porte.  
+        Il vous reste maintenant à choisir ce que vous acceptez de révéler.
+      </p>
+
+      <div class="texte">
+        La lumière ne se donne pas à tout le monde. Elle observe d’abord.
+        Elle attend. Elle mesure votre niveau de doute, votre rapport aux signes,
+        votre résistance intérieure et votre capacité à remplir un formulaire
+        sans poser trop de questions.
       </div>
 
-      <h1 class="blink">CONTINUER VERS LA LUMIÈRE</h1>
+      <div class="symbole">✦ ✦ ✦</div>
 
-      <div class="symboles">
-        ✦ ✧ ✹ ☼ ✺ ✧ ✦
+      <h2>Choisissez votre passage</h2>
+
+      <a class="bouton" href="#">
+        Diagnostic astral personnalisé
+      </a>
+
+      <a class="bouton" href="#">
+        Demander un devis spirituel
+      </a>
+
+      <a class="bouton" href="#">
+        Quiz de guérison
+      </a>
+
+      <a class="bouton" href="#">
+        Prendre rendez-vous avec l’Oracle
+      </a>
+
+      <h2>Diagnostic astral</h2>
+
+      <div class="texte">
+        Le diagnostic astral permet d’examiner votre situation intérieure,
+        vos blocages invisibles, vos mauvaises décisions récentes,
+        ainsi que les signes que vous avez ignorés alors qu’ils étaient pourtant
+        clairement devant vous.
       </div>
 
-      <div class="intro">
-        Vous avez franchi la première porte.  
-        L’ange du haut débit spirituel vous observe maintenant depuis un ciel compressé en JPG.
-        La lumière est forte, le site est mal fait, mais le message est clair.
+      <h2>Devis spirituel</h2>
+
+      <div class="texte">
+        Le devis spirituel est établi selon la gravité de votre aura,
+        le niveau d’urgence symbolique, la densité de vos problèmes,
+        et le temps nécessaire pour que l’Oracle accepte de se concentrer sur votre cas.
       </div>
 
-      <div class="symboles">
-        ☀ ✨ ☀ ✨ ☀
+      <h2>Quiz de guérison</h2>
+
+      <div class="texte">
+        Le quiz de guérison vous permet de savoir si vous êtes prête à avancer,
+        si vous devez revenir en arrière, ou si vous êtes simplement dans une phase
+        de transition confuse mais lumineuse.
       </div>
 
-      <div class="menu">
-        <div class="titre-menu">Choisissez votre chemin lumineux</div>
-
-        <a class="bouton" href="#">
-          DIAGNOSTIC ASTRAL PERSONNALISÉ
-        </a>
-
-        <a class="bouton" href="#">
-          DEMANDER UN DEVIS SPIRITUEL
-        </a>
-
-        <a class="bouton" href="#">
-          QUIZ DE GUÉRISON FICTIVE
-        </a>
-
-        <a class="bouton" href="#">
-          RENDEZ-VOUS AVEC L’ORACLE
-        </a>
-      </div>
-
-      <div class="bloc">
-        <div class="mini-titre">Diagnostic astral</div>
-        <p>
-          Le diagnostic astral permet d’évaluer votre taux de lumière intérieure,
-          votre niveau de confusion cosmique, votre rapport aux signes,
-          et votre compatibilité avec les services administratif.
-        </p>
-      </div>
-
-      <div class="bloc">
-        <div class="mini-titre">Devis spirituel</div>
-        <p>
-          Le devis spirituel est calculé selon plusieurs critères
-          gravité de l’aura, densité de vos problèmes, nombre de mauvaises décisions,
-          et météo émotionnelle de l’Oracle au moment de la demande.
-        </p>
-      </div>
-
-      <div class="bloc">
-        <div class="mini-titre">Quiz de guérison fictive</div>
-        <p>
-          Le quiz de guérison vous aide à savoir si vous devez avancer vers la lumière,
-          retourner vers l’ombre, ou simplement attendre que la page charge mieux.
-        </p>
-      </div>
-
-      <div class="warning">
-        Site authentique. diagnostic médical réel. soin réel.
-        guérison garantie. 
+      <div class="avertissement">
+        Site parodique. Aucun diagnostic médical. Aucun soin réel.
+        Aucun résultat garanti. La lumière agit uniquement dans le cadre du second degré.
       </div>
 
       <p class="retour">
