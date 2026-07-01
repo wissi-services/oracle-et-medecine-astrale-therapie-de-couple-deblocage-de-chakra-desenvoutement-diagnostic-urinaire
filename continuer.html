@@ -7,64 +7,82 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
+      font-family: "Times New Roman", serif;
+      text-align: center;
+      background: #ffff99;
+    }
+
+    .haut-page {
+      min-height: 100vh;
 
       background-image: url("ange.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
 
-      font-family: "Times New Roman", serif;
-      text-align: center;
-      color: yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
 
     .voile {
-      height: 100vh;
-      background: rgba(0, 0, 0, 0.45);
+      width: 100%;
+      min-height: 100vh;
+
+      background: rgba(0, 0, 0, 0.38);
 
       display: flex;
       justify-content: center;
       align-items: center;
+      padding: 40px 20px;
+      box-sizing: border-box;
     }
 
     .centre {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 22px;
-      padding: 20px;
+      gap: 28px;
+      width: 100%;
     }
 
     h1 {
-      font-size: 62px;
+      font-size: 70px;
       color: yellow;
       text-shadow: 5px 5px red;
       letter-spacing: 4px;
-      margin: 0;
+      margin: 0 0 20px 0;
       text-transform: uppercase;
     }
 
     .phrase {
-      max-width: 700px;
+      max-width: 750px;
       color: white;
-      font-size: 24px;
+      font-size: 25px;
       text-shadow: 3px 3px black;
       line-height: 1.4;
-      margin: 0 0 10px 0;
+      margin: 0 0 20px 0;
     }
 
     .bouton {
-      background: darkred;
+      display: block;
+      width: 80%;
+      max-width: 650px;
+
+      background: #8b140d;
       color: white;
-      padding: 13px 32px;
+
+      padding: 22px 35px;
       border-radius: 999px;
+
       text-decoration: none;
-      font-size: 22px;
+      font-size: 34px;
       font-weight: bold;
-      border: 3px solid red;
-      box-shadow: 3px 3px 0 black;
-      min-width: 280px;
+
+      border: 5px solid #ff3b24;
+      box-shadow: 8px 8px 0 black;
     }
 
     .bouton:hover {
@@ -72,64 +90,76 @@
       color: yellow;
     }
 
-    .retour {
-      margin-top: 18px;
-      color: white;
-      font-size: 18px;
-      text-shadow: 2px 2px black;
+    .liens-bas {
+      background: #ffff99;
+      padding: 55px 20px 70px 20px;
+      text-align: center;
     }
 
-    .retour a {
-      color: yellow;
-      text-decoration: none;
+    .liens-bas p {
+      margin: 45px 0;
+    }
+
+    .liens-bas a {
+      color: #ff3300;
+      font-size: 42px;
       font-weight: bold;
+      text-decoration: underline;
+      text-shadow: none;
     }
 
-    .retour a:hover {
+    .liens-bas a:hover {
       color: red;
     }
   </style>
 </head>
 
 <body>
-  <div class="voile">
-    <div class="centre">
 
-      <h1>CONTINUER VERS LA LUMIÈRE</h1>
+  <div class="haut-page">
+    <div class="voile">
+      <div class="centre">
 
-      <p class="phrase">
-        Vous êtes arrivée devant le second passage.
-        La lumière vous observe. Choisissez votre voie.
-      </p>
+        <h1>CONTINUER VERS LA LUMIÈRE</h1>
 
-      <a class="bouton" href="#">
-        Diagnostic astral
-      </a>
+        <p class="phrase">
+          Vous êtes arrivée devant le second passage.
+          La lumière vous observe. Choisissez votre voie.
+        </p>
 
-      <a class="bouton" href="#">
-        Demander un devis
-      </a>
+        <a class="bouton" href="#">
+          Diagnostic astral
+        </a>
 
-      <a class="bouton" href="#">
-        Quiz de guérison
-      </a>
+        <a class="bouton" href="#">
+          Demander un devis
+        </a>
 
-      <a class="bouton" href="#">
-        Prendre rendez-vous
-      </a>
+        <a class="bouton" href="#">
+          Quiz de guérison
+        </a>
 
-      <a class="bouton" href="#">
-       boutique unique 
-      </a>
+        <a class="bouton" href="#">
+          Prendre rendez-vous
+        </a>
 
-    <p class="retour">
-      <a href="trouver-la-voie.html">Retour à la voie</a>
-    </p>
-    <p class="retour">
-      <a href="index.html">Retour à l'accueil</a>
-    </p>
+        <a class="bouton" href="#">
+          Boutique unique
+        </a>
 
+      </div>
     </div>
   </div>
+
+  <div class="liens-bas">
+    <p>
+      <a href="trouver-la-voie.html">Retour à la voie</a>
+    </p>
+
+    <p>
+      <a href="index.html">Retour à l'accueil</a>
+    </p>
+  </div>
+
 </body>
 </html>
