@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Résultat astral</title>
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: black;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    .page {
+      min-height: 100vh;
+
+      background-image: url("resultat.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      position: relative;
+      padding: 40px 30px;
+      box-sizing: border-box;
+    }
+
+    .voile {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.08);
+      z-index: 1;
+    }
+
+    .contenu {
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 55px;
+      font-weight: normal;
+      margin: 20px 0 90px 0;
+      color: white;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .titre-resultat {
+      font-size: 40px;
+      margin-left: 0;
+      margin-bottom: 45px;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .texte {
+      max-width: 950px;
+      margin-left: 45px;
+      font-size: 39px;
+      line-height: 1.25;
+      text-align: left;
+      text-shadow: 2px 2px 7px black;
+    }
+
+    .signature {
+      margin-top: 70px;
+      margin-left: 60%;
+      font-size: 28px;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .retour {
+      position: fixed;
+      bottom: 25px;
+      right: 30px;
+      z-index: 3;
+    }
+
+    .retour a {
+      color: white;
+      font-size: 20px;
+      text-decoration: underline;
+      text-shadow: 2px 2px 5px black;
+    }
+
+    .retour a:hover {
+      color: yellow;
+    }
+
+    @media (max-width: 800px) {
+      .page {
+        background-position: center;
+        padding: 25px 18px;
+      }
+
+      h1 {
+        font-size: 42px;
+        margin-bottom: 60px;
+      }
+
+      .titre-resultat {
+        font-size: 30px;
+      }
+
+      .texte {
+        margin-left: 0;
+        font-size: 27px;
+      }
+
+      .signature {
+        margin-left: 0;
+        font-size: 22px;
+        text-align: right;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="voile"></div>
+
+    <div class="contenu">
+
+      <h1>Résultat</h1>
+
+      <div class="titre-resultat">
+        Nebuleuse du topinanbour
+      </div>
+
+      <div class="texte">
+        Malgré toute les difficultés que vous rencontrez vous refusez d’aller vers lavant
+        la et toute votre particularité ! continuez comme ça dans 10 ans vous toucherez
+        le fond, petit a petit oiseau détruit sa vie :)
+      </div>
+
+      <div class="signature">
+        Oracle - le livre de la jungle
+      </div>
+
+    </div>
+
+    <p class="retour">
+      <a href="lecture-astrale.html">Refaire une lecture</a>
+    </p>
+  </div>
+
+</body>
+</html>
