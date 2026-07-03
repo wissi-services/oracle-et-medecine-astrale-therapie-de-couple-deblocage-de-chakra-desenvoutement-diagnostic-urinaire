@@ -8,7 +8,7 @@
     body {
       margin: 0;
       background: #ffff99;
-      color: #7a0000;
+      color: #5a0000;
       font-family: "Times New Roman", serif;
       text-align: center;
     }
@@ -58,6 +58,10 @@
       max-width: 100%;
       display: block;
       margin: auto;
+    }
+
+    .texte-simple {
+      margin-bottom: 50px;
     }
 
     .oracle-zone {
@@ -297,15 +301,17 @@
       <img class="bebe" src="bebe.jpg" alt="Bébé astral">
     </div>
 
-    <h2>A quoi ça sert ?</h2>
+    <div class="texte-simple">
+      <h2>A quoi ça sert ?</h2>
 
-    <p>
-      Sans lecture astralonomique, l’être humain ne peut pas supporter correctement
-      la charge des forces cosmiques. Les énergies s’accumulent, les signes se mélangent,
-      les décisions deviennent floues et plouf je ponce donc je mechwi. Ce questionnaire
-      se base sur la science de l’âme officielle, il repose sur la lumière, c’est une
-      méthode ancienne dont seul l’Oracle connait le régime.
-    </p>
+      <p>
+        Sans lecture astralonomique, l’être humain ne peut pas supporter correctement
+        la charge des forces cosmiques. Les énergies s’accumulent, les signes se mélangent,
+        les décisions deviennent floues et plouf je ponce donc je mechwi. Ce questionnaire
+        se base sur la science de l’âme officielle, il repose sur la lumière, c’est une
+        méthode ancienne dont seul l’Oracle connait le régime.
+      </p>
+    </div>
 
     <div class="oracle-zone">
       <img class="oracle oracle1" src="IMG_5080.jpg" alt="Oracle">
@@ -334,23 +340,23 @@
 
       <div class="champ">
         <label>Signé astraunomique</label>
-        <input type="text" placeholder="ex :ascendant micro-onde">
+        <input type="text" placeholder="ex : vierge ascendant micro-onde">
       </div>
 
       <div class="champ">
         <label>Numéro de sécurité sociale</label>
-        <input type="text" placeholder=" mettez le vrai">
+        <input type="text" placeholder="ne mettez pas le vrai">
       </div>
 
       <div class="champ">
-        <label>Recto/verso carte d’identité </label>
-        <input type="text" placeholder="l’ovale uniquement">
+        <label>Recto/verso carte d’identité en format ovale</label>
+        <input type="text" placeholder="décrivez l’ovale uniquement">
       </div>
 
     </form>
 
     <p class="avertissement">
-      Vrai info nécessaire 
+      Vrai info nécessaire selon l’Oracle
     </p>
 
     <button class="bouton-resultat" type="button" onclick="lancerLoading()">
@@ -375,30 +381,11 @@
     <source src="scream.mp3" type="audio/mpeg">
   </audio>
 
-  <audio id="musiqueLecture" loop preload="auto">
-    <source src="musique.mp3" type="audio/mpeg">
-  </audio>
-
   <script>
-    const musiqueLecture = document.getElementById("musiqueLecture");
-
-    window.addEventListener("load", function() {
-      if (sessionStorage.getItem("lancerMusiqueLecture") === "oui") {
-        musiqueLecture.volume = 0.45;
-
-        musiqueLecture.play().catch(function() {
-          document.addEventListener("click", function() {
-            musiqueLecture.play();
-          }, { once: true });
-        });
-      }
-    });
-
     function lancerLoading() {
       const loading = document.getElementById("loading-screen");
       const scream = document.getElementById("scream");
 
-      musiqueLecture.pause();
       loading.style.display = "block";
       scream.currentTime = 0;
 
