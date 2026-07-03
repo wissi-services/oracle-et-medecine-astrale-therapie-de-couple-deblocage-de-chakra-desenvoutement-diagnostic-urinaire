@@ -9,291 +9,53 @@
       margin: 0;
       min-height: 100vh;
       font-family: "Times New Roman", serif;
+
       background-image: url("boutique.jpg");
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
       background-attachment: fixed;
-      color: #5a0000;
+
       text-align: center;
     }
 
     .voile {
       min-height: 100vh;
-      background: rgba(255, 230, 150, 0.25);
-      padding: 40px 20px;
+      background: rgba(255, 220, 120, 0.12);
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+
+      padding-top: 45px;
     }
 
     h1 {
-      font-size: 90px;
+      font-size: 95px;
       color: #b00000;
-      text-shadow: 4px 4px 0 #ffd15c, 8px 8px 0 #5a0000;
-      margin: 20px 0 5px 0;
+      text-shadow:
+        4px 4px 0 #ffd15c,
+        8px 8px 0 #5a0000;
+      margin: 0;
       font-weight: bold;
       letter-spacing: 5px;
     }
 
     .sous-titre {
-      font-size: 34px;
+      font-size: 38px;
       color: #8b0000;
       font-weight: bold;
       text-shadow: 2px 2px #ffd15c;
-      margin-bottom: 40px;
-    }
-
-    .contenu {
-      max-width: 1100px;
-      margin: auto;
-      background: rgba(255, 235, 160, 0.88);
-      border: 8px double #b00000;
-      padding: 30px;
-      box-shadow: 10px 10px 0 rgba(90, 0, 0, 0.8);
-    }
-
-    .intro {
-      font-size: 24px;
-      font-weight: bold;
-      color: #7a0000;
-      margin-bottom: 30px;
-      line-height: 1.5;
-    }
-
-    .produits {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .produit {
-      background: #fff0a8;
-      border: 5px solid #b00000;
-      padding: 20px;
-      box-shadow: 6px 6px 0 #5a0000;
-    }
-
-    .produit h2 {
-      color: #b00000;
-      font-size: 30px;
-      margin: 10px 0;
-      text-transform: uppercase;
-    }
-
-    .produit p {
-      font-size: 19px;
-      color: #5a0000;
-      font-weight: bold;
-      line-height: 1.4;
-    }
-
-    .prix {
-      font-size: 28px;
-      color: red;
-      font-weight: bold;
-      margin: 15px 0;
-    }
-
-    button {
-      background: #b00000;
-      color: #ffe680;
-      border: 4px outset #ffcc33;
-      padding: 12px 20px;
-      font-size: 20px;
-      font-weight: bold;
-      cursor: pointer;
-      font-family: "Times New Roman", serif;
-    }
-
-    button:hover {
-      background: red;
-      color: white;
-    }
-
-    .panier {
-      margin-top: 45px;
-      background: #fff7c2;
-      border: 6px ridge #b00000;
-      padding: 25px;
-      text-align: left;
-    }
-
-    .panier h2 {
-      text-align: center;
-      color: #b00000;
-      font-size: 42px;
-      text-shadow: 2px 2px #ffd15c;
-      margin-top: 0;
-    }
-
-    #liste-panier {
-      font-size: 22px;
-      color: #5a0000;
-      font-weight: bold;
-      line-height: 1.6;
-    }
-
-    .total {
-      text-align: center;
-      font-size: 30px;
-      color: red;
-      font-weight: bold;
-      margin-top: 20px;
-    }
-
-    .actions-panier {
-      text-align: center;
-      margin-top: 25px;
-    }
-
-    .retour {
-      margin-top: 40px;
-      font-size: 26px;
-      font-weight: bold;
-    }
-
-    .retour a {
-      color: #b00000;
-      background: #ffe680;
-      padding: 12px 25px;
-      border: 4px solid #b00000;
-      text-decoration: none;
-    }
-
-    .retour a:hover {
-      background: #b00000;
-      color: #ffe680;
+      margin-top: 10px;
     }
   </style>
 </head>
 
 <body>
   <div class="voile">
-
     <h1>独一无二商店</h1>
     <div class="sous-titre">BOUTIQUE UNIQUE</div>
-
-    <div class="contenu">
-
-      <p class="intro">
-        Bienvenue dans la boutique officielle de la lumière.
-        Les objets présentés ici ne sont pas encore tous disponibles,
-        mais leur puissance commerciale est déjà préoccupante.
-      </p>
-
-      <div class="produits">
-
-        <div class="produit">
-          <h2>Produit mystique 1</h2>
-          <p>
-            Description à compléter plus tard.  
-            Objet supposément rare, probablement inutile, mais fortement chargé en lumière.
-          </p>
-          <div class="prix">9,99 €</div>
-          <button onclick="ajouterAuPanier('Produit mystique 1', 9.99)">
-            Ajouter au panier
-          </button>
-        </div>
-
-        <div class="produit">
-          <h2>Produit mystique 2</h2>
-          <p>
-            Article réservé aux âmes prêtes à recevoir une marchandise
-            dont l’utilité n’a pas encore été officiellement révélée.
-          </p>
-          <div class="prix">14,99 €</div>
-          <button onclick="ajouterAuPanier('Produit mystique 2', 14.99)">
-            Ajouter au panier
-          </button>
-        </div>
-
-        <div class="produit">
-          <h2>Produit mystique 3</h2>
-          <p>
-            Accessoire de conversion lumineuse, conseillé par l’Oracle
-            mais validé par absolument personne.
-          </p>
-          <div class="prix">19,99 €</div>
-          <button onclick="ajouterAuPanier('Produit mystique 3', 19.99)">
-            Ajouter au panier
-          </button>
-        </div>
-
-      </div>
-
-      <div class="panier">
-        <h2>Votre panier</h2>
-
-        <div id="liste-panier">
-          Aucun article dans le panier.
-        </div>
-
-        <div class="total">
-          Total : <span id="total">0.00</span> €
-        </div>
-
-        <div class="actions-panier">
-          <button onclick="viderPanier()">Vider le panier</button>
-          <button onclick="envoyerCommande()">Envoyer la commande</button>
-        </div>
-      </div>
-
-      <p class="retour">
-        <a href="continuer.html">Retour vers la lumière</a>
-      </p>
-
-      <p class="retour">
-        <a href="index.html">Retour à l'accueil</a>
-      </p>
-
-    </div>
   </div>
-
-  <script>
-    let panier = [];
-    let total = 0;
-
-    function ajouterAuPanier(nom, prix) {
-      panier.push({ nom: nom, prix: prix });
-      total = total + prix;
-      afficherPanier();
-    }
-
-    function afficherPanier() {
-      const liste = document.getElementById("liste-panier");
-      const totalElement = document.getElementById("total");
-
-      if (panier.length === 0) {
-        liste.innerHTML = "Aucun article dans le panier.";
-        totalElement.textContent = "0.00";
-        return;
-      }
-
-      let contenu = "<ul>";
-
-      panier.forEach(function(article) {
-        contenu += "<li>" + article.nom + " — " + article.prix.toFixed(2) + " €</li>";
-      });
-
-      contenu += "</ul>";
-
-      liste.innerHTML = contenu;
-      totalElement.textContent = total.toFixed(2);
-    }
-
-    function viderPanier() {
-      panier = [];
-      total = 0;
-      afficherPanier();
-    }
-
-    function envoyerCommande() {
-      if (panier.length === 0) {
-        alert("Votre panier est vide. La lumière refuse les commandes invisibles.");
-        return;
-      }
-
-      alert("Commande envoyée à l’Oracle. Paiement, livraison et réalité du produit seront déterminés ultérieurement.");
-    }
-  </script>
-
 </body>
 </html>
