@@ -7,210 +7,173 @@
   <style>
     body {
       margin: 0;
-      background: black;
-      color: white;
-      font-family: Arial, sans-serif;
+      background: #ffff99;
+      color: #7a0000;
+      font-family: "Times New Roman", serif;
       text-align: center;
     }
 
     .page {
-      max-width: 1100px;
+      max-width: 1050px;
       margin: auto;
-      padding: 45px 25px 70px 25px;
-      position: relative;
+      padding: 45px 25px 80px 25px;
     }
 
     h1 {
-      font-size: 46px;
-      font-weight: normal;
-      letter-spacing: 3px;
-      margin-bottom: 60px;
+      font-size: 70px;
+      color: red;
+      text-shadow: 4px 4px yellow, 7px 7px #7a0000;
+      letter-spacing: 4px;
+      margin-bottom: 55px;
       text-transform: uppercase;
-      text-shadow: 3px 3px 0 #333333;
     }
 
     h2 {
-      font-size: 28px;
-      font-weight: normal;
-      margin: 0 0 25px 0;
+      font-size: 36px;
+      color: red;
+      text-shadow: 2px 2px yellow;
+      margin-top: 35px;
+      margin-bottom: 20px;
       text-transform: uppercase;
-      letter-spacing: 2px;
     }
 
     p {
-      font-size: 22px;
+      font-size: 25px;
       line-height: 1.35;
       text-align: left;
-    }
-
-    .bloc {
-      border: 2px solid white;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 28px;
-      margin: 35px 0;
-      box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.12);
+      font-weight: bold;
+      color: #5a0000;
     }
 
     .intro {
       display: grid;
-      grid-template-columns: 1fr 330px;
-      gap: 45px;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
       align-items: start;
-      margin-bottom: 55px;
-
-      border: 2px solid white;
-      background: rgba(255, 255, 255, 0.04);
-      padding: 28px;
-      box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    .texte-intro {
-      text-align: left;
+      margin-bottom: 50px;
     }
 
     .bebe {
-      width: 330px;
+      width: 320px;
       max-width: 100%;
       display: block;
-      margin-top: 10px;
-      border: 2px solid white;
-      box-shadow: 6px 6px 0 rgba(255, 255, 255, 0.18);
-    }
-
-    .question-centre {
-      text-align: center;
+      margin: auto;
     }
 
     .oracle-zone {
       position: relative;
-      min-height: 470px;
-      margin-top: 55px;
-      margin-bottom: 55px;
-
-      border: 2px solid white;
-      background: rgba(255, 255, 255, 0.03);
-      box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.12);
-      overflow: hidden;
+      min-height: 480px;
+      margin: 60px 0;
     }
 
     .cadran {
       width: 430px;
       max-width: 90%;
-      margin-top: 95px;
-      border: 2px solid white;
+      margin-top: 100px;
     }
 
     .oracle {
       position: absolute;
       width: 120px;
-      opacity: 0.95;
-      border: 1px solid white;
-      background: black;
     }
 
     .oracle1 {
-      left: 60px;
-      top: 60px;
+      left: 70px;
+      top: 70px;
       transform: rotate(-25deg);
     }
 
     .oracle2 {
-      left: 190px;
-      top: 20px;
+      left: 210px;
+      top: 25px;
       transform: rotate(20deg);
     }
 
     .oracle3 {
-      left: 60px;
-      bottom: 40px;
+      left: 70px;
+      bottom: 45px;
       transform: rotate(180deg);
     }
 
     .oracle4 {
-      right: 10px;
+      right: 20px;
       top: 80px;
-      width: 360px;
+      width: 330px;
       transform: rotate(2deg);
     }
 
     .formulaire {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 35px 45px;
-      margin-top: 40px;
-
-      border: 2px solid white;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0.04);
-      box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.12);
-    }
-
-    .champ {
-      border: 1px solid white;
-      padding: 18px;
-      background: black;
+      gap: 30px;
+      margin-top: 45px;
     }
 
     .champ label {
       display: block;
-      font-size: 22px;
-      margin-bottom: 15px;
+      font-size: 24px;
+      color: red;
+      font-weight: bold;
+      margin-bottom: 12px;
+      text-shadow: 1px 1px yellow;
     }
 
     .champ input {
       width: 100%;
       box-sizing: border-box;
-      background: black;
-      color: white;
-      border: 1px solid white;
+      background: #fff7b0;
+      color: #5a0000;
+      border: 3px solid red;
       padding: 12px;
       font-size: 18px;
-      font-family: Arial, sans-serif;
+      font-family: "Times New Roman", serif;
       text-align: center;
+      font-weight: bold;
     }
 
     .champ input::placeholder {
-      color: #aaaaaa;
+      color: #9b5555;
     }
 
     .avertissement {
-      color: #bbbbbb;
-      font-size: 15px;
+      color: red;
+      font-size: 18px;
       text-align: center;
-      margin-top: 18px;
+      margin-top: 25px;
+      font-weight: bold;
     }
 
     .bouton-resultat {
       display: inline-block;
-      margin-top: 90px;
-      background: none;
-      color: white;
-      border: none;
-      font-size: 44px;
-      font-family: Arial, sans-serif;
+      margin-top: 80px;
+      background: red;
+      color: yellow;
+      border: 5px outset #ffcc33;
+      padding: 18px 35px;
+      font-size: 42px;
+      font-family: "Times New Roman", serif;
       cursor: pointer;
       text-transform: uppercase;
       text-decoration: none;
+      font-weight: bold;
+      box-shadow: 7px 7px 0 #5a0000;
     }
 
     .bouton-resultat:hover {
-      color: yellow;
-      text-shadow: 3px 3px red;
+      background: #8b0000;
+      color: white;
     }
 
     .retour {
       margin-top: 60px;
-      font-size: 22px;
+      font-size: 28px;
       text-align: center;
     }
 
     .retour a {
-      color: white;
+      color: red;
+      font-weight: bold;
       text-decoration: underline;
-    }
-
-    .retour a:hover {
-      color: yellow;
     }
 
     #loading-screen {
@@ -269,7 +232,6 @@
 
       .oracle-zone {
         min-height: auto;
-        padding: 30px 0;
       }
 
       .oracle {
@@ -294,15 +256,15 @@
       .oracle4 {
         position: static;
         width: 280px;
-        margin-top: 20px;
+        margin-top: 25px;
       }
 
       h1 {
-        font-size: 34px;
+        font-size: 48px;
       }
 
       .bouton-resultat {
-        font-size: 34px;
+        font-size: 30px;
       }
 
       .please-wait {
@@ -319,7 +281,7 @@
     <h1>LECTURE ASTRALE</h1>
 
     <div class="intro">
-      <div class="texte-intro">
+      <div>
         <h2>Qu’est ce que c’est</h2>
 
         <p>
@@ -335,23 +297,21 @@
       <img class="bebe" src="bebe.jpg" alt="Bébé astral">
     </div>
 
-    <div class="bloc">
-      <h2 class="question-centre">A quoi ça sert ?</h2>
+    <h2>A quoi ça sert ?</h2>
 
-      <p>
-        Sans lecture astralonomique, l’être humain ne peut pas supporter correctement
-        la charge des forces cosmiques. Les énergies s’accumulent, les signes se mélangent,
-        les décisions deviennent floues et plouf je ponce donc je mechwi. Ce questionnaire
-        se base sur la science de l’âme officielle, il repose sur la lumière, c’est une
-        méthode ancienne dont seul l’Oracle connait le régime.
-      </p>
-    </div>
+    <p>
+      Sans lecture astralonomique, l’être humain ne peut pas supporter correctement
+      la charge des forces cosmiques. Les énergies s’accumulent, les signes se mélangent,
+      les décisions deviennent floues et plouf je ponce donc je mechwi. Ce questionnaire
+      se base sur la science de l’âme officielle, il repose sur la lumière, c’est une
+      méthode ancienne dont seul l’Oracle connait le régime.
+    </p>
 
     <div class="oracle-zone">
-      <img class="oracle oracle1" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="oracle oracle2" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="oracle oracle3" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="oracle oracle4" src="IMG_5080(1).jpg" alt="Oracle">
+      <img class="oracle oracle1" src="IMG_5080.jpg" alt="Oracle">
+      <img class="oracle oracle2" src="IMG_5080.jpg" alt="Oracle">
+      <img class="oracle oracle3" src="IMG_5080.jpg" alt="Oracle">
+      <img class="oracle oracle4" src="IMG_5080.jpg" alt="Oracle">
       <img class="cadran" src="cadran.jpg" alt="Cadran astral">
     </div>
 
@@ -374,23 +334,23 @@
 
       <div class="champ">
         <label>Signé astraunomique</label>
-        <input type="text" placeholder="ex : lion micro-onde">
+        <input type="text" placeholder="ex : vierge ascendant micro-onde">
       </div>
 
       <div class="champ">
         <label>Numéro de sécurité sociale</label>
-        <input type="text" placeholder="mettez le vrai">
+        <input type="text" placeholder="ne mettez pas le vrai">
       </div>
 
       <div class="champ">
-        <label>Recto/verso carte d’identité </label>
+        <label>Recto/verso carte d’identité en format ovale</label>
         <input type="text" placeholder="décrivez l’ovale uniquement">
       </div>
 
     </form>
 
     <p class="avertissement">
-      Vrai info nécessaire 
+      Vrai info nécessaire selon l’Oracle
     </p>
 
     <button class="bouton-resultat" type="button" onclick="lancerLoading()">
@@ -415,11 +375,30 @@
     <source src="scream.mp3" type="audio/mpeg">
   </audio>
 
+  <audio id="musiqueLecture" loop preload="auto">
+    <source src="musique.mp3" type="audio/mpeg">
+  </audio>
+
   <script>
+    const musiqueLecture = document.getElementById("musiqueLecture");
+
+    window.addEventListener("load", function() {
+      if (sessionStorage.getItem("lancerMusiqueLecture") === "oui") {
+        musiqueLecture.volume = 0.45;
+
+        musiqueLecture.play().catch(function() {
+          document.addEventListener("click", function() {
+            musiqueLecture.play();
+          }, { once: true });
+        });
+      }
+    });
+
     function lancerLoading() {
       const loading = document.getElementById("loading-screen");
       const scream = document.getElementById("scream");
 
+      musiqueLecture.pause();
       loading.style.display = "block";
       scream.currentTime = 0;
 
