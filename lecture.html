@@ -63,49 +63,15 @@
     .texte-simple {
       margin-bottom: 50px;
     }
+.cadran-zone {
+  margin: 60px 0;
+  text-align: center;
+}
 
-    .oracle-zone {
-      position: relative;
-      min-height: 480px;
-      margin: 60px 0;
-    }
-
-    .cadran {
-      width: 430px;
-      max-width: 90%;
-      margin-top: 100px;
-    }
-
-    .oracle {
-      position: absolute;
-      width: 120px;
-    }
-
-    .oracle1 {
-      left: 70px;
-      top: 70px;
-      transform: rotate(-25deg);
-    }
-
-    .oracle2 {
-      left: 210px;
-      top: 25px;
-      transform: rotate(20deg);
-    }
-
-    .oracle3 {
-      left: 70px;
-      bottom: 45px;
-      transform: rotate(180deg);
-    }
-
-    .oracle4 {
-      right: 20px;
-      top: 80px;
-      width: 330px;
-      transform: rotate(2deg);
-    }
-
+.cadran {
+  width: 430px;
+  max-width: 90%;
+}
     .formulaire {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -234,35 +200,6 @@
         grid-template-columns: 1fr;
       }
 
-      .oracle-zone {
-        min-height: auto;
-      }
-
-      .oracle {
-        width: 85px;
-      }
-
-      .oracle1 {
-        left: 15px;
-        top: 25px;
-      }
-
-      .oracle2 {
-        left: 110px;
-        top: 10px;
-      }
-
-      .oracle3 {
-        left: 15px;
-        bottom: 25px;
-      }
-
-      .oracle4 {
-        position: static;
-        width: 280px;
-        margin-top: 25px;
-      }
-
       h1 {
         font-size: 48px;
       }
@@ -313,13 +250,9 @@
       </p>
     </div>
 
-    <div class="oracle-zone">
-      <img class="oracle oracle1" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="oracle oracle2" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="oracle oracle3" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="oracle oracle4" src="IMG_5080(1).jpg" alt="Oracle">
-      <img class="cadran" src="cadran.jpg" alt="Cadran astral">
-    </div>
+  <div class="cadran-zone">
+  <img class="cadran" src="cadran.jpg" alt="Cadran astral">
+  </div>
 
     <form class="formulaire">
 
