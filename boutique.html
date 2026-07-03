@@ -7,33 +7,19 @@
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
+      background: #d99a35;
       font-family: "Times New Roman", serif;
-
-      background-image: url("boutique.jpg");
-      background-size: contain;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color: #d99a35;
-
       text-align: center;
     }
 
-    .voile {
-      min-height: 100vh;
-      background: rgba(255, 220, 120, 0.12);
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-
-      padding-top: 45px;
+    .titre {
+      background: #f3b04d;
+      padding: 30px 10px 20px 10px;
+      border-bottom: 6px double #9b0000;
     }
 
     h1 {
-      font-size: 95px;
+      font-size: 80px;
       color: #b00000;
       text-shadow:
         4px 4px 0 #ffd15c,
@@ -44,19 +30,66 @@
     }
 
     .sous-titre {
-      font-size: 38px;
+      font-size: 36px;
       color: #8b0000;
       font-weight: bold;
       text-shadow: 2px 2px #ffd15c;
       margin-top: 10px;
     }
+
+    .affiche {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-left: 8px solid #b36a1c;
+      border-right: 8px solid #b36a1c;
+      box-sizing: border-box;
+    }
+
+    .liens-bas {
+      background: #f3b04d;
+      padding: 40px 20px 60px 20px;
+      border-top: 6px double #9b0000;
+    }
+
+    .liens-bas p {
+      margin: 30px 0;
+    }
+
+    .liens-bas a {
+      color: #b00000;
+      font-size: 34px;
+      font-weight: bold;
+      text-decoration: underline;
+      text-shadow: 2px 2px #ffd15c;
+    }
+
+    .liens-bas a:hover {
+      color: red;
+    }
   </style>
 </head>
 
 <body>
-  <div class="voile">
+
+  <div class="titre">
     <h1>独一无二商店</h1>
     <div class="sous-titre">BOUTIQUE UNIQUE</div>
   </div>
+
+  <img class="affiche" src="boutique.jpg" alt="Affiche de la boutique unique">
+
+  <div class="liens-bas">
+    <p>
+      <a href="continuer.html">Retour vers la lumière</a>
+    </p>
+
+    <p>
+      <a href="index.html">Retour à l'accueil</a>
+    </p>
+  </div>
+
 </body>
 </html>
