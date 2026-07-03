@@ -1,125 +1,332 @@
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Lecture astrale</title>
 
-<h1>LECTURE ASTRAL</h1>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-<p>
-  Le diagnostic astral est une lecture profonde, silencieuse et approximative
-  de votre état lumineux intérieur. Il permet d’évaluer votre origine spirituelle,
-  votre niveau de vibration, vos blocages invisibles, ainsi que les signes que
-  vous avez volontairement ignorés depuis votre naissance.
-</p>
+    .page {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 25px 70px 25px;
+      position: relative;
+    }
 
-<p>
-  Ce questionnaire se base sur la science de l'ame officielle. Il repose
-  sur la lumière, l’instinct de l’Oracle, vos réponses, et une méthode ancienne
-  dont personne ne connaît réellement l’origine.
-</p>
+    h1 {
+      font-size: 42px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      margin-bottom: 70px;
+    }
 
-<p>
-  Répondez avec sincérité. La lumière voit tout. Même quand vous mentez pour avoir
-  l’air plus galactique que vous ne l’êtes.
-</p>
+    h2 {
+      font-size: 26px;
+      font-weight: normal;
+      margin: 25px 0;
+    }
 
+    p {
+      font-size: 22px;
+      line-height: 1.25;
+      text-align: left;
+    }
 
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 330px;
+      gap: 45px;
+      align-items: start;
+      margin-bottom: 60px;
+    }
 
-<form id="quiz-diagnostic">
+    .texte-intro {
+      text-align: left;
+    }
 
-  <h2>1. Quand vous regardez le ciel, que ressentez-vous ?</h2>
+    .bebe {
+      width: 330px;
+      max-width: 100%;
+      display: block;
+      margin-top: 10px;
+    }
 
-  <label>
-    <input type="radio" name="question1">
-    Une nostalgie étrange
-  </label><br>
+    .question-centre {
+      margin: 50px 0 25px 0;
+    }
 
-  <label>
-    <input type="radio" name="question1">
-    Une peur administrative
-  </label><br>
+    .oracle-zone {
+      position: relative;
+      min-height: 430px;
+      margin-top: 30px;
+    }
 
-  <label>
-    <input type="radio" name="question1">
-    Une envie d'assiter a l'assinat de jhon f kennedy 
-  </label><br>
+    .cadran {
+      width: 430px;
+      max-width: 90%;
+      margin-top: 95px;
+    }
 
-  <label>
-    <input type="radio" name="question1">
-    Rien, mais je fais semblant
-  </label><br>
+    .oracle {
+      position: absolute;
+      width: 120px;
+      opacity: 0.95;
+    }
 
-<h2>2. Quelle est votre plus grande source de bonheur ?</h2>
+    .oracle1 {
+      left: 60px;
+      top: 60px;
+      transform: rotate(-25deg);
+    }
 
-  <label>
-    <input type="radio" name="question2">
-    La lumière
-  </label><br>
+    .oracle2 {
+      left: 190px;
+      top: 20px;
+      transform: rotate(20deg);
+    }
 
-  <label>
-    <input type="radio" name="question2">
-    la grenouille qui veux ce faire plus grosse que le boeuf 
-  </label><br>
+    .oracle3 {
+      left: 60px;
+      bottom: 40px;
+      transform: rotate(180deg);
+    }
 
-    <label>
-    <input type="radio" name="question2">
-    Wissalle et Xi jinping
-  </label><br>
+    .oracle4 {
+      right: 10px;
+      top: 80px;
+      width: 360px;
+    }
 
-    <label>
-    <input type="radio" name="question2">
-    faire partie du mouvement revolutionnaire du hasboullah 
-  </label><br>
+    .formulaire {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 35px 45px;
+      margin-top: 40px;
+    }
 
-  <h2>4. Face à un problème, vous avez tendance à :</h2>
+    .champ label {
+      display: block;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
 
-  <label>
-    <input type="radio" name="question4">
-    Reciter la torah
-  </label><br>
+    .champ input {
+      width: 100%;
+      box-sizing: border-box;
+      background: black;
+      color: white;
+      border: 1px solid white;
+      padding: 12px;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
 
-  <label>
-    <input type="radio" name="question4">
-    Demander un devis
-  </label><br>
+    .champ input::placeholder {
+      color: #aaaaaa;
+    }
 
-  <label>
-    <input type="radio" name="question4">
-    Je l'ai entend me parler 
-  </label><br>
+    .avertissement {
+      color: #bbbbbb;
+      font-size: 14px;
+      text-align: center;
+      margin-top: 18px;
+    }
 
-  <label>
-    <input type="radio" name="question4">
-    elle est juste derriere moi je l'entend respirer 
-  </label><br>
+    .bouton-resultat {
+      display: inline-block;
+      margin-top: 90px;
+      background: none;
+      color: white;
+      border: none;
+      font-size: 44px;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
 
-  <h2>5. D'après François Hollande, Oppaganmastyle est "mid"</h2>
+    .bouton-resultat:hover {
+      color: yellow;
+      text-shadow: 3px 3px red;
+    }
 
-<label>
-  <input type="radio" name="question4">
-  Je confirme l'affirmation suivante venant d'après
-</label><br>
+    .audio-zone {
+      margin-top: 45px;
+    }
 
-<label>
-  <input type="radio" name="question4">
-  Appelle la police
-</label><br>
+    .audio-zone button {
+      background: darkred;
+      color: white;
+      border: 2px solid red;
+      padding: 10px 22px;
+      font-size: 18px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
 
-<label>
-  <input type="radio" name="question4">
-  天上太阳红彤彤
-心中的太阳是毛泽东
-他领导我们得解放
-人民翻身当家做主人
-咿呀咿吱呦喂呀而呀吱呦啊
-人民翻身当家做主人
-咿呀咿吱呦喂呀而呀吱呦啊
-人民翻身当家做主人
-天上太阳红彤彤
-心中的太阳是毛泽东
-他领导我们得解放
-人民翻身当家做主人
-咿呀咿吱呦喂呀而呀吱呦啊
-人民翻身当家做主人
-咿呀咿吱呦喂呀而呀吱呦啊
-人民翻身当家做主人
-咿呀咿吱呦喂呀而呀吱呦啊
-人民翻身当家做主人
-</label><br>
+    .audio-zone button:hover {
+      background: red;
+      color: yellow;
+    }
+
+    .retour {
+      margin-top: 60px;
+      font-size: 22px;
+      text-align: center;
+    }
+
+    .retour a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .retour a:hover {
+      color: yellow;
+    }
+
+    @media (max-width: 800px) {
+      .intro {
+        grid-template-columns: 1fr;
+      }
+
+      .formulaire {
+        grid-template-columns: 1fr;
+      }
+
+      .oracle4 {
+        position: static;
+        width: 280px;
+        margin-top: 20px;
+      }
+
+      .oracle {
+        width: 85px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      .bouton-resultat {
+        font-size: 34px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1>LECTURE ASTRALE</h1>
+
+    <div class="intro">
+      <div class="texte-intro">
+        <h2>Qu’est ce que c’est</h2>
+
+        <p>
+          Votre signe astrale a été déterminé à votre naissance, au moment précis
+          où les astres, la détresse administrative et les forces invisibles ont
+          décidé de vous attribuer un profil. Contrairement à l’astrologie normale,
+          la lecture astrale regarde votre état lumineux intérieur, pas seulement
+          votre signe, mais aussi votre heure, votre naissance de naissance,
+          votre fatigue karmique.
+        </p>
+      </div>
+
+      <img class="bebe" src="bebe.jpg" alt="Bébé astral">
+    </div>
+
+    <h2 class="question-centre">A quoi ça sert ?</h2>
+
+    <p>
+      Sans lecture astralonomique, l’être humain ne peut pas supporter correctement
+      la charge des forces cosmiques. Les énergies s’accumulent, les signes se mélangent,
+      les décisions deviennent floues et plouf je ponce donc je mechwi. Ce questionnaire
+      se base sur la science de l’âme officielle, il repose sur la lumière, c’est une
+      méthode ancienne dont seul l’Oracle connait le régime.
+    </p>
+
+    <div class="oracle-zone">
+      <img class="oracle oracle1" src="IMG_5080.jpg" alt="Oracle">
+      <img class="oracle oracle2" src="IMG_5080.jpg" alt="Oracle">
+      <img class="oracle oracle3" src="IMG_5080.jpg" alt="Oracle">
+      <img class="oracle oracle4" src="IMG_5080.jpg" alt="Oracle">
+      <img class="cadran" src="cadran.jpg" alt="Cadran astral">
+    </div>
+
+    <form class="formulaire">
+
+      <div class="champ">
+        <label>Date de naissance</label>
+        <input type="text" placeholder="jj/mm/aaaa">
+      </div>
+
+      <div class="champ">
+        <label>Heure de naissance</label>
+        <input type="text" placeholder="ex : 03h33">
+      </div>
+
+      <div class="champ">
+        <label>Naissance de naissance</label>
+        <input type="text" placeholder="lieu, planète ou couloir">
+      </div>
+
+      <div class="champ">
+        <label>Signé astraunomique</label>
+        <input type="text" placeholder="ex : vierge ascendant micro-onde">
+      </div>
+
+      <div class="champ">
+        <label>Numéro de sécurité sociale</label>
+        <input type="text" placeholder="ne mettez pas le vrai">
+      </div>
+
+      <div class="champ">
+        <label>Recto/verso carte d’identité en format ovale</label>
+        <input type="text" placeholder="décrivez l’ovale uniquement">
+      </div>
+
+    </form>
+
+    <p class="avertissement">
+      Vrai info nécessaire l’Oracle
+    </p>
+
+    <a class="bouton-resultat" href="loading.html">
+      VOIR LE RÉSULTAT
+    </a>
+
+    <div class="audio-zone">
+      <audio id="musique" loop>
+        <source src="musique.mp3" type="audio/mpeg">
+      </audio>
+
+      <button onclick="lancerMusique()">
+        Activer la musique astrale
+      </button>
+    </div>
+
+    <p class="retour">
+      <a href="continuer.html">Retour vers la lumière</a>
+    </p>
+
+  </div>
+
+  <script>
+    function lancerMusique() {
+      const musique = document.getElementById("musique");
+      musique.play();
+    }
+  </script>
+
+</body>
+</html>
