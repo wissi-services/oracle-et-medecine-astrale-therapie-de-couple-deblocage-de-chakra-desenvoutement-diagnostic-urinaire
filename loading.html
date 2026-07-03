@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Please wait</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      overflow: hidden;
+      font-family: "Courier New", monospace;
+    }
+
+    .loading-page {
+      height: 100vh;
+      width: 100vw;
+
+      background-image: url("loading.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      position: relative;
+    }
+
+    .voile {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.22);
+    }
+
+    .please-wait {
+      position: absolute;
+      bottom: 65px;
+      left: 0;
+      width: 100%;
+
+      text-align: center;
+      color: rgba(210, 210, 210, 0.62);
+      font-size: 48px;
+      letter-spacing: 4px;
+      text-shadow: 0 0 8px black;
+    }
+
+    .dots::after {
+      content: "";
+      animation: dots 1.2s infinite;
+    }
+
+    @keyframes dots {
+      0% {
+        content: "";
+      }
+
+      25% {
+        content: ".";
+      }
+
+      50% {
+        content: "..";
+      }
+
+      75% {
+        content: "...";
+      }
+
+      100% {
+        content: "";
+      }
+    }
+
+    .flash {
+      position: fixed;
+      inset: 0;
+      background: white;
+      opacity: 0;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .flash.active {
+      animation: flashBrutal 0.22s forwards;
+    }
+
+    @keyframes flashBrutal {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+      }
+    }
+
+    .start {
+      position: absolute;
+      inset: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.75);
+      color: white;
+      font-size: 28px;
+      text-align: center;
+      cursor: pointer;
+      z-index: 20;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="loading-page">
+    <div class="voile"></div>
+
+    <div class="please-wait">
+      Please wait<span class="dots"></span>
+    </div>
+
+    <div class="flash" id="flash"></div>
+
+    <div class="start" id="start" onclick="lancerAudio()">
+      Cliquez pour continuer
+    </div>
+  </div>
+
+  <audio id="scream" preload="auto">
+    <source src="scream.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById("scream");
+    const start = document.getElementById("start");
+    const flash = document.getElementById("flash");
+
+    function allerAuResultat() {
+      flash.classList.add("active");
+
+      setTimeout(function() {
+        window.location.href = "resultat-astral.html";
+      }, 220);
+    }
+
+    function lancerAudio() {
+      start.style.display = "none";
+
+      audio.play().then(function() {
+        // L’audio est lancé correctement
+      }).catch(function() {
+        // Si le navigateur bloque encore, on redirige quand même après un court délai
+        setTimeout(allerAuResultat, 1800);
+      });
+    }
+
+    audio.addEventListener("ended", function() {
+      allerAuResultat();
+    });
+
+    window.addEventListener("load", function() {
+      audio.play().catch(function() {
+        start.style.display = "flex";
+      });
+    });
+  </script>
+
+</body>
+</html>
