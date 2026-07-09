@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Déblocage des chakras</title>
+
+  <style>
+    body {margin: 0;background: #ffff99;color: #5a0000; font-family: "Times New Roman", serif;}
+
+    .page {max-width: 1100px;margin: auto;padding: 45px 25px 90px 25px; }
+
+    h1 {
+      text-align: center;
+      font-size: 66px;
+      color: red;
+      text-shadow: 4px 4px yellow, 7px 7px #7a0000;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .sous-titre {
+      text-align: center;
+      font-size: 28px;
+      color: #7a0000;
+      font-weight: bold;
+      margin-bottom: 55px;
+    }
+
+    h2 {
+      font-size: 38px;
+      color: red;
+      text-shadow: 2px 2px yellow;
+      margin-top: 55px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      border-bottom: 4px double red;
+      padding-bottom: 8px;
+    }
+
+    h3 {
+      font-size: 30px;
+      color: red;
+      margin-bottom: 12px;
+      text-shadow: 1px 1px yellow;
+    }
+
+    h4 {
+      font-size: 24px;
+      color: red;
+      margin: 15px 0 10px 0;
+      text-shadow: 1px 1px yellow;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 1.35;
+      font-weight: bold;
+      color: #5a0000;
+    }
+
+    ul, ol {
+      font-size: 23px;
+      line-height: 1.45;
+      font-weight: bold;
+      color: #5a0000;
+      padding-left: 35px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      background: #fff7b0;
+      border: 6px double red;
+      padding: 35px;
+      box-shadow: 9px 9px 0 #7a0000;
+      margin-bottom: 55px;
+    }
+
+    .en-bref {
+      background: #ffef75;
+      border: 4px solid red;
+      padding: 25px 30px;
+      margin: 45px 0;
+      box-shadow: 7px 7px 0 #7a0000;
+    }
+
+    .grille-chakras {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 35px;
+      margin-top: 35px;
+    }
+
+    .chakra {
+      background: #fff7b0;
+      border: 4px solid red;
+      padding: 25px;
+      box-shadow: 7px 7px 0 #7a0000;
+    }
+
+    .chakra p {
+      font-size: 21px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: red;
+      color: yellow;
+      padding: 7px 14px;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      border: 3px outset #ffcc33;
+    }
+
+    .deux-photos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 25px;
+    }
+
+    .photo-posture {
+      background: #ffef75;
+      border: 3px solid red;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 5px 5px 0 #7a0000;
+    }
+
+    .photo-posture img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border: 3px solid red;
+      background: #fff7b0;
+    }
+
+    .photo-posture p {
+      font-size: 18px;
+      line-height: 1.3;
+      text-align: left;
+      color: #5a0000;
+      margin: 0;
+    }
+
+    .routine {
+      background: #fff7b0;
+      border: 6px double red;
+      padding: 35px;
+      box-shadow: 9px 9px 0 #7a0000;
+      margin-top: 40px;
+    }
+
+    .avertissement {
+      background: #ffdddd;
+      border: 5px solid red;
+      padding: 25px;
+      margin-top: 55px;
+      box-shadow: 7px 7px 0 #7a0000;
+    }
+
+    .avertissement p {
+      color: #5a0000;
+      font-size: 22px;
+    }
+
+    .boutons {
+      text-align: center;
+      margin-top: 65px;
+    }
+
+    .bouton {
+      display: inline-block;
+      background: red;
+      color: yellow;
+      border: 5px outset #ffcc33;
+      padding: 18px 35px;
+      margin: 15px;
+      font-size: 30px;
+      font-family: "Times New Roman", serif;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 7px 7px 0 #5a0000;
+    }
+
+    .bouton:hover {
+      background: #8b0000;
+      color: white;
+    }
+
+    @media (max-width: 800px) {
+      h1 {
+        font-size: 44px;
+      }
+
+      .sous-titre {
+        font-size: 22px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      p, ul, ol {
+        font-size: 20px;
+      }
+
+      .grille-chakras {
+        grid-template-columns: 1fr;
+      }
+
+      .deux-photos {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-posture img {
+        height: auto;
+      }
+
+      .intro,
+      .routine,
+      .chakra,
+      .photo-posture {
+        box-shadow: 5px 5px 0 #7a0000;
+      }
+
+      .bouton {
+        display: block;
+        max-width: 300px;
+        margin: 20px auto;
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page">
+
+    <h1>DÉBLOCAGE DES CHAKRAS</h1>
+
+    <div class="sous-titre">
+      Programme sérieux de respiration, d’ancrage, de mobilité et de recentrage intérieur
+    </div>
+
+    <div class="intro">
+      <h2>Comprendre avant de pratiquer</h2>
+
+      <p>
+        Le travail des chakras repose sur une approche globale du corps et de l’attention.
+        Il ne s’agit pas de forcer une transformation immédiate, mais d’observer ce qui
+        semble tendu, fermé, dispersé ou difficile à ressentir, puis de travailler avec
+        des postures simples, une respiration régulière et une présence consciente.
+      </p>
+
+    </div>
+
+    <div class="en-bref">
+      <h2>En bref</h2>
+
+      <ul>
+        <li>Reconnaitre les blocages par chakra </li>
+        <li>Posture</li>
+        <li>Choisir une posture simple et stable plutôt qu’une posture spectaculaire</li>
+        <li>Répéter la routine plusieurs jours pour observer une évolution</li>
+        <li>Ne jamais remplacer un avis médical par une pratique énergétique</li>
+      </ul>
+    </div>
+
+    <h2>Les 7 chakras</h2>
+
+    <div class="grille-chakras">
+
+      <div class="chakra">
+        <span class="badge">1. Chakra racine</span>
+        <h3>Stabilité et ancrage</h3>
+
+        <p>
+          Chaque chakra bloqué produit des symptômes spécifiques. Le chakra racine Muladhara fermé génère de l'anxiété bucal,
+          de l'instabilité financière, de la fatigue physique et des Infractions de nature administrative. Le chakra sacré Svadhisthana
+          bloqué crée une perte de créativité et un fort désir de consomer du MDMA, des problèmes sexuels son aussi observer chez des couples pour qui lergonomie a etait deregler.
+          Le plexus solaire Manipura fermé mène à un manque de confiance et d'énergie personnelle on peu aussi 
+          rencontrer une agravation des symptomes des chlamydioses.
+          Le chakra cardiaque Anahata obstrué manifeste une difficulté à aimer les personne nommé sybille et à recevoir des virements.
+          La gorge Vishuddha bloquée entrave l'expression authentique on rencontre alors un mimitisme chez ces personnent je ne vasi pas donner de prenom mais cette personne ce reconnaitra.
+          Le troisième œil Ajna fermé obscurcit l'intuition  et la clarté de l'ementale. 
+          Enfin, un chakra coronal Sahasrara non ouvert crée une déconnexion spirituelle total heureusement pour vous j'ai ete charger par les forces de l'ordres 
+          a partager mon savoir . la premiere etape et d'Identifier le chakra concerné .
+        </p>
+
+        <p>
+          <strong>Postures pour débloquer le chakra :</strong> montagne, squat yogique, posture de l’enfant.
+        </p>
+
+
+
+####################################################################################
+        
+<p>
+  Pour débloquer le chakra racine, Tadasana, la posture de la montagne,
+  et Malasana, la posture du squat yogique, aident à renforcer l’ancrage
+  et la stabilité intérieure.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="racine-montagne.jpg" alt="Tadasana - posture de la montagne">
+    <h4>Tadasana</h4>
+    <p>
+      La posture de la montagne consiste à se tenir debout, les pieds bien posés au sol,
+      le dos droit et la respiration calme. Elle aide à retrouver une sensation de stabilité
+      et de présence dans le corps.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="racine-squat.jpg" alt="Malasana - squat yogique">
+    <h4>Malasana</h4>
+    <p>
+      Le squat yogique permet de rapprocher le bassin du sol et de renforcer la sensation
+      d’ancrage. Il travaille le bas du corps, les appuis et le lien avec la terre.
+    </p>
+  </div>
+
+</div>
+
+####################################################################################
+        
+<p>
+  Le chakra sacré bénéficie d’Utthita Trikonasana, la posture du trianglu,
+  et de Bhujangasana, la posture du cobra.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="sacre-triangle.jpg" alt="Utthita Trikonasana">
+    <h4>Utthita Trikonasana</h4>
+    <p>
+      La posture du trianglu ouvre les hanches, étire les flancs et aide à retrouver
+      une sensation de fluidité dans le bassin.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="sacre-cobra.jpg" alt="Bhujangasana">
+    <h4>Bhujangasana</h4>
+    <p>
+      La posture du cobra ouvre l’avant du corps, stimule la respiration et soutient
+      le travail d’ouverture du chakra sacré.
+    </p>
+  </div>
+
+
+
+####################################################################################
+<p>
+  Pour le plexus solaire, Navasana, la posture du bateau, et Dhanurasana,
+  la posture de l’arc, aident à renforcer le centre du corps, la volonté
+  et l’énergie personnelle.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="plexus-bateau.jpg" alt="Navasana - posture du bateau">
+    <h4>Navasana</h4>
+    <p>
+      La posture du bateau engage les abdominaux et demande de maintenir l’équilibre.
+      Elle soutient le travail du plexus solaire en renforçant la stabilité intérieure,
+      la concentration et la confiance dans l’action.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="plexus-arc.jpg" alt="Dhanurasana - posture de l’arc">
+    <h4>Dhanurasana</h4>
+    <p>
+      La posture de l’arc ouvre l’avant du corps et stimule la zone abdominale.
+      Elle peut aider à réveiller l’énergie, à travailler l’ouverture et à renforcer
+      la sensation de puissance personnelle.
+    </p>
+  </div>
+
+</div>
+####################################################################################
+<p>
+  Le chakra cardiaque s’ouvre avec Ustrasana, la posture du chameau,
+  et Bakasana, la posture du corbeau, qui travaillent l’ouverture,
+  la confiance et l’équilibre émotionnel.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="coeur-chameau.jpg" alt="Ustrasana - posture du chameau">
+    <h4>Ustrasana</h4>
+    <p>
+      La posture du chameau ouvre la poitrine, étire l’avant du corps et invite
+      à respirer plus largement. Elle soutient le travail du chakra du cœur
+      en favorisant l’ouverture et le relâchement.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="coeur-corbeau.jpg" alt="Bakasana - posture du corbeau">
+    <h4>Bakasana</h4>
+    <p>
+      La posture du corbeau demande équilibre, engagement et confiance.
+      Elle peut accompagner le travail du cœur en aidant à dépasser la peur
+      de tomber et à développer une présence plus stable.
+    </p>
+  </div>
+
+</div>
+####################################################################################
+<p>
+  La gorge se travaille avec Jalandhara Bandha, le verrou de la gorge,
+  et Sarvangasana, la posture de la chandelle, en restant toujours prudente
+  avec la nuque et la respiration.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="gorge-jalandhara.jpg" alt="Jalandhara Bandha - verrou de la gorge">
+    <h4>Jalandhara Bandha</h4>
+    <p>
+      Jalandhara Bandha consiste à engager doucement la zone de la gorge
+      dans une pratique respiratoire contrôlée. Il est associé à l’écoute,
+      au calme intérieur et à la maîtrise de l’expression.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="gorge-chandelle.jpg" alt="Sarvangasana - posture de la chandelle">
+    <h4>Sarvangasana</h4>
+    <p>
+      La chandelle inverse le corps et place l’attention sur la gorge,
+      la nuque et la respiration. Cette posture doit rester progressive
+      et ne doit jamais créer de douleur cervicale.
+    </p>
+  </div>
+
+</div>
+####################################################################################
+<p>
+  Le troisième œil peut être travaillé avec Adho Mukha Svanasana,
+  la posture du chien tête en bas, qui favorise le calme mental,
+  la concentration et le retour vers l’intérieur.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="troisieme-oeil-chien.jpg" alt="Adho Mukha Svanasana - chien tête en bas">
+    <h4>Adho Mukha Svanasana</h4>
+    <p>
+      Le chien tête en bas allonge la colonne, relâche progressivement les épaules
+      et place la tête vers le bas. Cette inversion douce peut aider à calmer
+      l’agitation mentale et à recentrer l’attention.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="troisieme-oeil-meditation.jpg" alt="Méditation pour le troisième œil">
+    <h4>Méditation centrée</h4>
+    <p>
+      En position assise, le regard peut rester fermé ou légèrement dirigé vers
+      l’espace entre les sourcils. Cette pratique soutient la clarté mentale,
+      l’intuition et l’observation intérieure.
+    </p>
+  </div>
+
+</div> 
+ ####################################################################################       
+<p>
+  Le chakra coronal peut être travaillé avec Sirsasana, la posture sur la tête,
+  ou plus simplement avec une méditation assise, surtout si l’inversion n’est
+  pas adaptée au niveau ou au corps de la personne.
+</p>
+
+<div class="deux-photos">
+
+  <div class="photo-posture">
+    <img src="coronal-tete-en-bas.jpg" alt="Sirsasana - posture sur la tête">
+    <h4>Sirsasana</h4>
+    <p>
+      Sirsasana est une inversion avancée qui demande de la force, du contrôle
+      et une bonne préparation. Elle est associée au recul intérieur, à la présence
+      et à la verticalité, mais elle ne doit pas être forcée.
+    </p>
+  </div>
+
+  <div class="photo-posture">
+    <img src="coronal-meditation.jpg" alt="Méditation assise pour le chakra coronal">
+    <h4>Méditation assise</h4>
+    <p>
+      La méditation assise est une alternative simple et sûre. Elle permet de travailler
+      le chakra coronal par le silence, l’observation, la respiration calme et la sensation
+      de présence.
+    </p>
+  </div>
+
+</div>
+####################################################################################
+
+
+    <div class="avertissement">
+      <h2>Précaution importante</h2>
+
+      <p>
+        Cette pratique relève du bien-être, du yoga et du travail corporel doux. Elle remplace
+        un diagnostic médical, un traitement et un accompagnement professionnel en cas de
+        douleur persistante, malaise, fatigue extrême, anxiété intense ou symptôme inhabituel.contacter l'oracle 
+      </p>
+    </div>
+
+    <div class="boutons">
+      <a class="bouton" href="continuer.html">Retour vers la lumière</a>
+      <a class="bouton" href="index.html">Accueil</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
