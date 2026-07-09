@@ -4,273 +4,308 @@
   <meta charset="UTF-8">
   <title>Déblocage des chakras</title>
 
-  <style>
-    body {margin: 0;background: #ffff99;color: #5a0000; font-family: "Times New Roman", serif;}
+<style>
+  body {
+    margin: 0;
+    background: #ffff99;
+    color: #5a0000;
+    font-family: "Times New Roman", serif;
+  }
 
-    .page {max-width: 1100px;margin: auto;padding: 45px 25px 90px 25px; }
+  .page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 25px 90px 25px;
+  }
+.phrase-important {
+  text-align: center;
+  font-size: 30px;
+  color: red;
+  text-shadow: 2px 2px yellow;
+  margin: 35px 0;
+}
+  h1 {
+    text-align: center;
+    font-size: 66px;
+    color: red;
+    text-shadow: 4px 4px yellow, 7px 7px #7a0000;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+  }
+
+  .sous-titre {
+    text-align: center;
+    font-size: 28px;
+    color: #7a0000;
+    font-weight: bold;
+    margin-bottom: 55px;
+  }
+
+  h2 {
+    font-size: 38px;
+    color: red;
+    text-shadow: 2px 2px yellow;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 4px double red;
+    padding-bottom: 8px;
+  }
+
+  h3 {
+    font-size: 30px;
+    color: red;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px yellow;
+  }
+
+  h4 {
+    font-size: 24px;
+    color: red;
+    margin: 15px 0 10px 0;
+    text-shadow: 1px 1px yellow;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: bold;
+    color: #5a0000;
+  }
+
+  ul, ol {
+    font-size: 23px;
+    line-height: 1.45;
+    font-weight: bold;
+    color: #5a0000;
+    padding-left: 35px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  .intro {
+    background: #fff7b0;
+    border: 6px double red;
+    padding: 25px 35px 35px 35px;
+    box-shadow: 9px 9px 0 #7a0000;
+    margin-bottom: 55px;
+  }
+
+  .intro h2 {
+    margin-top: 0;
+  }
+
+  .en-bref {
+    background: #ffef75;
+    border: 4px solid red;
+    padding: 25px 30px;
+    margin: 45px 0;
+    box-shadow: 7px 7px 0 #7a0000;
+  }
+
+  .grille-chakras {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    max-width: 980px;
+    margin: 35px auto 0 auto;
+  }
+
+  .chakra {
+    background: #fff7b0;
+    border: 4px solid red;
+    padding: 25px;
+    box-shadow: 7px 7px 0 #7a0000;
+    box-sizing: border-box;
+  }
+
+  .chakra p {
+    font-size: 21px;
+  }
+
+  .badge {
+    display: inline-block;
+    background: red;
+    color: yellow;
+    padding: 7px 14px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border: 3px outset #ffcc33;
+  }
+
+  .deux-photos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+    align-items: start;
+  }
+
+  .trois-photos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+    align-items: start;
+  }
+
+  .une-photo {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 30px auto 0 auto;
+  }
+
+  .photo-posture {
+    background: #ffef75;
+    border: 3px solid red;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 5px 5px 0 #7a0000;
+    box-sizing: border-box;
+  }
+
+  .photo-posture img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border: 3px solid red;
+    background: #fff7b0;
+    box-sizing: border-box;
+  }
+
+  .photo-posture p {
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: left;
+    color: #5a0000;
+    margin: 0;
+  }
+
+  .routine {
+    background: #fff7b0;
+    border: 6px double red;
+    padding: 35px;
+    box-shadow: 9px 9px 0 #7a0000;
+    margin-top: 40px;
+  }
+
+  .namaste-texte {
+    text-align: center;
+    font-size: 32px;
+    color: red;
+    text-shadow: 2px 2px yellow;
+    margin-top: 45px;
+    margin-bottom: 25px;
+  }
+
+  .image-namaste {
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 55px auto;
+    border: 6px double red;
+    box-shadow: 9px 9px 0 #7a0000;
+    background: #fff7b0;
+  }
+
+  .avertissement {
+    background: #ffdddd;
+    border: 5px solid red;
+    padding: 25px;
+    margin-top: 55px;
+    box-shadow: 7px 7px 0 #7a0000;
+  }
+
+  .avertissement p {
+    color: #5a0000;
+    font-size: 22px;
+  }
+
+  .boutons {
+    text-align: center;
+    margin-top: 65px;
+  }
+
+  .bouton {
+    display: inline-block;
+    background: red;
+    color: yellow;
+    border: 5px outset #ffcc33;
+    padding: 18px 35px;
+    margin: 15px;
+    font-size: 30px;
+    font-family: "Times New Roman", serif;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 7px 7px 0 #5a0000;
+  }
+
+  .bouton:hover {
+    background: #8b0000;
+    color: white;
+  }
+
+  @media (max-width: 800px) {
+    .page {
+      padding: 25px 15px 70px 15px;
+    }
 
     h1 {
-      text-align: center;
-      font-size: 66px;
-      color: red;
-      text-shadow: 4px 4px yellow, 7px 7px #7a0000;
-      letter-spacing: 3px;
-      margin-bottom: 25px;
-      text-transform: uppercase;
+      font-size: 44px;
     }
 
     .sous-titre {
-      text-align: center;
-      font-size: 28px;
-      color: #7a0000;
-      font-weight: bold;
-      margin-bottom: 55px;
-    }
-
-    h2 {
-      font-size: 38px;
-      color: red;
-      text-shadow: 2px 2px yellow;
-      margin-top: 55px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      border-bottom: 4px double red;
-      padding-bottom: 8px;
-    }
-
-    h3 {
-      font-size: 30px;
-      color: red;
-      margin-bottom: 12px;
-      text-shadow: 1px 1px yellow;
-    }
-
-    h4 {
-      font-size: 24px;
-      color: red;
-      margin: 15px 0 10px 0;
-      text-shadow: 1px 1px yellow;
-    }
-
-    p {
-      font-size: 24px;
-      line-height: 1.35;
-      font-weight: bold;
-      color: #5a0000;
-    }
-
-    ul, ol {
-      font-size: 23px;
-      line-height: 1.45;
-      font-weight: bold;
-      color: #5a0000;
-      padding-left: 35px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    .intro {
-      background: #fff7b0;
-      border: 6px double red;
-      padding: 35px;
-      box-shadow: 9px 9px 0 #7a0000;
-      margin-bottom: 55px;
-    }
-
-    .en-bref {
-      background: #ffef75;
-      border: 4px solid red;
-      padding: 25px 30px;
-      margin: 45px 0;
-      box-shadow: 7px 7px 0 #7a0000;
-    }
-
-    .grille-chakras {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 35px;
-      margin-top: 35px;
-    }
-
-    .chakra {
-      background: #fff7b0;
-      border: 4px solid red;
-      padding: 25px;
-      box-shadow: 7px 7px 0 #7a0000;
-    }
-
-    .chakra p {
-      font-size: 21px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: red;
-      color: yellow;
-      padding: 7px 14px;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 15px;
-      border: 3px outset #ffcc33;
-    }
-    .une-photo {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 520px;
-  margin: 25px auto 0 auto;
-}
-
-.trois-photos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 25px;
-}
-    .deux-photos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-      margin-top: 25px;
-    }
-
-    .photo-posture {
-      background: #ffef75;
-      border: 3px solid red;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 5px 5px 0 #7a0000;
-    }
-
-    .photo-posture img {
-      width: 100%;
-      height: 230px;
-      object-fit: cover;
-      border: 3px solid red;
-      background: #fff7b0;
-    }
-
-    .photo-posture p {
-      font-size: 18px;
-      line-height: 1.3;
-      text-align: left;
-      color: #5a0000;
-      margin: 0;
-    }
-
-    .routine {
-      background: #fff7b0;
-      border: 6px double red;
-      padding: 35px;
-      box-shadow: 9px 9px 0 #7a0000;
-      margin-top: 40px;
-    }
-.namaste-texte {
-  text-align: center;
-  font-size: 32px;
-  color: red;
-  text-shadow: 2px 2px yellow;
-  margin-top: 45px;
-  margin-bottom: 25px;
-}
-
-.image-namaste {
-  display: block;
-  width: 100%;
-  max-width: 760px;
-  margin: 0 auto 55px auto;
-  border: 6px double red;
-  box-shadow: 9px 9px 0 #7a0000;
-  background: #fff7b0;
-}
-    .avertissement {
-      background: #ffdddd;
-      border: 5px solid red;
-      padding: 25px;
-      margin-top: 55px;
-      box-shadow: 7px 7px 0 #7a0000;
-    }
-
-    .avertissement p {
-      color: #5a0000;
       font-size: 22px;
     }
 
-    .boutons {
-      text-align: center;
-      margin-top: 65px;
+    h2 {
+      font-size: 30px;
+    }
+
+    p, ul, ol {
+      font-size: 20px;
+    }
+
+    .grille-chakras {
+      grid-template-columns: 1fr;
+      max-width: 100%;
+    }
+
+    .deux-photos,
+    .trois-photos {
+      grid-template-columns: 1fr;
+    }
+
+    .une-photo {
+      max-width: 100%;
+    }
+
+    .photo-posture img {
+      height: auto;
+      object-fit: contain;
+    }
+
+    .intro,
+    .routine,
+    .chakra,
+    .photo-posture {
+      box-shadow: 5px 5px 0 #7a0000;
     }
 
     .bouton {
-      display: inline-block;
-      background: red;
-      color: yellow;
-      border: 5px outset #ffcc33;
-      padding: 18px 35px;
-      margin: 15px;
-      font-size: 30px;
-      font-family: "Times New Roman", serif;
-      font-weight: bold;
-      text-decoration: none;
-      box-shadow: 7px 7px 0 #5a0000;
+      display: block;
+      max-width: 300px;
+      margin: 20px auto;
+      font-size: 24px;
     }
-
-    .bouton:hover {
-      background: #8b0000;
-      color: white;
-    }
-
-    @media (max-width: 800px) {
-      h1 {
-        font-size: 44px;
-      }
-
-      .sous-titre {
-        font-size: 22px;
-      }
-
-      h2 {
-        font-size: 30px;
-      }
-
-      p, ul, ol {
-        font-size: 20px;
-      }
-
-      .grille-chakras {
-        grid-template-columns: 1fr;
-      }
-
-      .deux-photos {
-        grid-template-columns: 1fr;
-      }
-       .trois-photos {
-  grid-template-columns: 1fr;
-}
-
-.une-photo {
-  max-width: 100%;
-}
-      .photo-posture img {
-        height: auto;
-      }
-
-      .intro,
-      .routine,
-      .chakra,
-      .photo-posture {
-        box-shadow: 5px 5px 0 #7a0000;
-      }
-
-      .bouton {
-        display: block;
-        max-width: 300px;
-        margin: 20px auto;
-        font-size: 24px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
@@ -283,19 +318,19 @@
     </div>
 
     <div class="intro">
-      <h2>Comprendre avant de pratiquer</h2>
+      <h2></h2>
 
       <p>
-        Le travail des chakras repose sur une approche globale du corps et de l’attention.
-        Il ne s’agit pas de forcer une transformation immédiate, mais d’observer ce qui
-        semble tendu, fermé, dispersé ou difficile à ressentir, puis de travailler avec
-        des postures simples, une respiration régulière et une présence consciente.
+Le travail des chakras repose sur une approche scientifilique du corps et de l’âme. Ce programme a été réalisé par le responsable du chakra vessie, 
+        un médecin compétent qui comprend mieux que tout le monde qu’un chakra bloqué peut entraîner des conséquences dans le bien-être de nos adeptes.
+Nous vous prions de bien vouloir suivre les étapes avec sérieux, car un chakra mal rangé peut rapidement finir en GAV.
+En cas de chakra récalcitrant, le service après-vente spirituel reste ouvert tous les mercredis du mois d’octobre, de 14h02 à 14h03. Merci de respecter les jours de repos de l’oracle.
       </p>
 
     </div>
 
     <div class="en-bref">
-      <h2>En bref</h2>
+      <h2>thot shit</h2>
 
       <ul>
         <li>Reconnaitre les blocages par chakra </li>
@@ -311,7 +346,6 @@
     <div class="grille-chakras">
 
       <div class="chakra">
-        <span class="badge">1. Chakra racine</span>
         <h3>Reconnaitre les blocages par chakra</h3>
 
         <p>
@@ -324,12 +358,13 @@ Enfin, un chakra coronal Sahasrara non ouvert crée une déconnexion spirituelle
         </p>
 
 
+<p class="phrase-important">
+  Maintenant posez vous la question suivante :<br>
+  qui est justin billy buerre ?
 </p>
-        maintenant posez vous la question suivante : 
-        qui est justin billy buerre ?
 
-</p>
-seulement apres vous pourrez commencer votre séance de déblocage chakrique 
+<p class="phrase-important">
+  Seulement apres vous pourrez commencer votre séance de déblocage chakrique
 </p>
 
 <p class="namaste-texte">
@@ -342,9 +377,16 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
 <h3>Postures pour débloquer le chakra racine</h3>
 
 <p>
-  Pour débloquer le chakra racine, Tadasana, la posture de la montagne,
-  et Malasana, la posture du squat yogique, aident à renforcer l’ancrage
-  et la stabilité intérieure.
+Chacune des postures ci-dessous nous a été généreusement réalisée par notre humble Mikequete.
+</p>
+
+        
+<p>
+Pour débloquer le chakra racine, commencez par Tadasana, la posture de la montagne. 
+Fermez les yeux, laissez-vous emporter et acceptez enfin votre véritable nature vous êtes une montagne de merde.
+N’oubliez jamais que vous n’avancerez jamais dans votre vie, car tout a déjà été décidé par l’oracle lors d’une réunion secrète tenue un mercredi entre 14h02 et 14h03.
+Fermez les yeux, respirez profondément, puis fermez votre gueule. ZINSPIRE ZEXSPIRE ZINSPIRE ZEXSPIRE
+Poursuivez ensuite avec Malasana, la posture du squat yogique, grande favorite de l’oracle, permettant d’éliminer les gênes digestives, les regrets, les mauvaises décisions - le service des chakras.
 </p>
 
 <div class="deux-photos">
@@ -353,9 +395,9 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="montagne (2).jpg" alt="Tadasana - posture de la montagne">
     <h4>Tadasana</h4>
     <p>
-      La posture de la montagne consiste à se tenir debout, les pieds bien posés au sol,
-      le dos droit et la respiration calme. Elle aide à retrouver une sensation de stabilité
-      et de présence dans le corps.
+La posture de la montagne consiste à se tenir debout, les pieds bien plantés au sol, comme si vous attendiez un huissier.
+Le dos doit rester droit, la respiration calme, et le regard vide, car à ce stade il ne faut surtout pas avoir l’air de comprendre ce qui se passe.
+Cette posture aide à retrouver une sensation de stabilité, de présence dans le corps, et surtout à accepter que, parfois, votre plus grande mission dans la vie est simplement de rester debout.
     </p>
   </div>
 
@@ -363,20 +405,21 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="squat.jpg" alt="Malasana - squat yogique">
     <h4>Malasana</h4>
     <p>
-      Le squat yogique permet de rapprocher le bassin du sol et de renforcer la sensation
-      d’ancrage. Il travaille le bas du corps, les appuis et le lien avec la terre.
+Le squat yogique permet de rapprocher le bassin du sol, comme si vous tentiez de négocier directement avec le sol.
+Les pieds doivent rester bien ancrés, le bas du corps engagé, et la dignité complètement absente, car cette posture ne laisse aucune place à l’eg.
+Elle travaille les appuis, les jambes, le lien avec la terre, et surtout votre capacité à rester accroupi sans remettre en question toutes les décisions qui vous ont mené jusque-là.
+
     </p>
   </div>
 
 </div>
 
-
-
 <p>
-  Le chakra sacré bénéficie d’Utthita Trikonasana, la posture du triangle,
-  de Bhujangasana, la posture du cobra, et d’Eka Pada Rajakapotasana,
-  la posture du pigeon. Ces postures travaillent l’ouverture du bassin,
-  la fluidité du mouvement et le relâchement des tensions émotionnelles.
+Le chakra sacré bénéficie d’Utthita Trikonasana, la posture du triangle, idéale pour donner à votre bassin l’illusion qu’il participe enfin à un projet structuré.
+Poursuivez avec Bhujangasana, la posture du cobra, no comment.
+Terminez avec Eka Pada Rajakapotasana, la posture du pigeon, parfaite pour ouvrir le bassin, libérer les tensions émotionnelles et comprendre pourquoi certains oiseaux ont naturellement l’air traumatisés.
+Ces postures travaillent la fluidité du mouvement, le relâchement intérieur, et surtout votre capacité à rester digne pendant que votre corps forme des angles que même l’oracle refuse de commenter.
+
 </p>
 
 <div class="trois-photos">
@@ -385,8 +428,11 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="trianglu.jpg" alt="Utthita Trikonasana - posture du triangle">
     <h4>Utthita Trikonasana</h4>
     <p>
-      La posture du triangle étire les flancs, ouvre le bassin et aide à retrouver
-      une sensation d’espace et de fluidité dans le corps.
+Pendant la posture, respirez calmement, gardez les jambes engagées, et acceptez 
+      que votre corps forme un triangle approximatif,
+      validé uniquement parce que L’oracle a récemment été condamné à verser 
+      une certaine somme à la justice et n’a donc 
+      plus assez d’argent pour s’acheter une équerre. Les dons sont appréciés, surtout en espèces.
     </p>
   </div>
 
@@ -394,8 +440,10 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="cobra.jpg" alt="Bhujangasana - posture du cobra">
     <h4>Bhujangasana</h4>
     <p>
-      La posture du cobra ouvre l’avant du corps, stimule la respiration et soutient
-      le travail d’ouverture du chakra sacré.
+Cette posture soutient l’ouverture du chakra sacré, libère les tensions, 
+et permet surtout de comprendre qu’être un cobra, c’est avant tout ramper dignement vers le succès pendant que tout le monde peut courir.
+Mais la compétition, c’est pour ceux qui ont des jambes fonctionnelles et des ambitions. Vous, vous n’en êtes pas capable.
+Acceptez donc votre misérable destin, baissez le menton, ouvrez le chakra, et rampez avec dignité vers votre prochaine déception.
     </p>
   </div>
 
@@ -403,8 +451,8 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="pigeon.jpg" alt="Eka Pada Rajakapotasana - posture du pigeon">
     <h4>Eka Pada Rajakapotasana</h4>
     <p>
-      La posture du pigeon agit profondément sur les hanches. Elle aide à relâcher
-      les tensions du bassin et accompagne le travail émotionnel lié au chakra sacré.
+Installez-vous au sol, respirez calmement, puis acceptez cette forme étrange où votre 
+amour-propre reste coincée quelque part entre votre hanche droite et votre passé judiciaire
     </p>
   </div>
 
@@ -412,9 +460,11 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
 
 
 <p>
-  Pour le plexus solaire, Navasana, la posture du bateau, et Dhanurasana,
-  la posture de l’arc, aident à renforcer le centre du corps, la volonté
-  et l’énergie personnelle.
+Pour le plexus solaire, commencez avec Navasana, la posture du bateau,
+  parfaite pour renforcer le centre du corps et vous rappeler 
+  que même une barque a probablement une meilleure stabilité financière.
+  Poursuivez avec Dhanurasana, la posture de l’arc, qui travaille la volonté, l’énergie personnelle et cette 
+  petite flamme intérieure que l’oracle cherche encore à localiser chez vous.
 </p>
 
 <div class="deux-photos">
@@ -423,9 +473,10 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="bateau.jpg" alt="Navasana - posture du bateau">
     <h4>Navasana</h4>
     <p>
-      La posture du bateau engage les abdominaux et demande de maintenir l’équilibre.
-      Elle soutient le travail du plexus solaire en renforçant la stabilité intérieure,
-      la concentration et la confiance dans l’action.
+La posture du bateau engage les abdominaux, si vous en avez.
+Dans le cas contraire, contractez quand même
+Asseyez-vous, levez les jambes, serrez le ventre et maintenez l’équilibre, Ne tremblez pas trop
+tout mouvement suspect pourra être retenu contre vous l’oracle, actuellement sous contrôle judiciaire.
     </p>
   </div>
 
@@ -433,9 +484,7 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="arc.jpg" alt="Dhanurasana - posture de l’arc">
     <h4>Dhanurasana</h4>
     <p>
-      La posture de l’arc ouvre l’avant du corps et stimule la zone abdominale.
-      Elle peut aider à réveiller l’énergie, à travailler l’ouverture et à renforcer
-      la sensation de puissance personnelle.
+Allongez-vous sur le ventre, attrapez vos chevilles, relevez le buste ZINSPIRE. ZEXSPIRE. ZINSPIRE. ZEXSPIRE. Ne réfléchissez pas, penser aggrave les symptômes.
     </p>
   </div>
 
@@ -444,9 +493,13 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
 
 
 <p>
-  Le chakra cardiaque s’ouvre avec Ustrasana, la posture du chameau,
-  et Bakasana, la posture du corbeau, qui travaillent l’ouverture,
-  la confiance et l’équilibre émotionnel.
+Saviez-vous que le chakra cardiaque est directement à l’ouverture émotionnelle et aux virements bancaires non déclarés de l’oracle ?
+Ustrasana, la posture du chameau, permet d’ouvrir la poitrine, mais aussi de mieux respirer lors d’une audition libre, ce qui peut être utile dans certaines procédures en cours.
+Bakasana, la posture du corbeau, travaille l’équilibre et la confiance. Une posture fortement recommandée aux personnes devant rester 
+  stables malgré trois convocations, deux témoignages contradictoires et une perquisition menée à 6h12 du matin.
+Selon les archives sacrées, le corbeau représente la lucidité, la transformation et la capacité à disparaître rapidement lorsque les forces de l’ordre frappent à la porte.
+L’oracle rappelle cependant que toutes ces informations sont fournies à titre spirituel et ne constituent en aucun cas un aveu, même partiel, devant une juridiction compétente.
+
 </p>
 
 <div class="deux-photos">
@@ -455,9 +508,11 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="chameau.jpg" alt="Ustrasana - posture du chameau">
     <h4>Ustrasana</h4>
     <p>
-      La posture du chameau ouvre la poitrine, étire l’avant du corps et invite
-      à respirer plus largement. Elle soutient le travail du chakra du cœur
-      en favorisant l’ouverture et le relâchement.
+Cette position invite à respirer plus largement, ce qui peut s’avérer utile lorsque 
+  l’oracle reçoit une convocation, découvre un nouveau chef d’accusation, ou tente d’expliquer pourquoi 14 000 € de dons ont été retrouvés dans un placard.
+Cette posture soutient le travail du chakra du cœur en favorisant l’ouverture,
+      le relâchement et cette étrange capacité à regarder les forces de l’ordre dans les yeux tout en prétendant que tout cela relève d’un malentendu.
+
     </p>
   </div>
 
@@ -465,9 +520,10 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="corbeau.jpg" alt="Bakasana - posture du corbeau">
     <h4>Bakasana</h4>
     <p>
-      La posture du corbeau demande équilibre, engagement et confiance.
-      Elle peut accompagner le travail du cœur en aidant à dépasser la peur
-      de tomber et à développer une présence plus stable.
+Saviez-vous que la posture du corbeau demande équilibre, 
+engagement et confiance, trois qualités que l’oracle recommande
+fortement depuis qu’il a appris à se tenir immobile pendant une
+  audition de 4 heures.
     </p>
   </div>
 
@@ -476,8 +532,13 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
 
 
 <p>
-  La gorge peut être travaillée avec Sarvangasana, la posture de la chandelle,
-  en restant toujours prudente avec la nuque, les épaules et la respiration.
+La gorge peut être travaillée avec Sarvangasana, la posture de la chandelle,
+en restant toujours prudente avec la nuque, les épaules et la respiration.
+Cette posture favorise l’expression, la circulation énergétique et cette capacité 
+rare à garder la tête froide alors que le reste du corps est littéralement à l’envers, 
+comme le dossier judiciaire de l’oracle depuis l’affaire du mercredi d’octobre.
+La chandelle demande prudence et contrôle, deux notions que l’oracle découvre
+progressivement depuis que les forces de l’ordre lui ont conseillé de ne plus “sauter sur les occasions” sans autorisation écrite.
 </p>
 
 <div class="une-photo">
@@ -486,9 +547,11 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="chandelle.jpg" alt="Sarvangasana - posture de la chandelle">
     <h4>Sarvangasana</h4>
     <p>
-      La chandelle inverse le corps et place l’attention sur la gorge,
-      la nuque et la respiration. Cette posture doit rester progressive
-      et ne doit jamais créer de douleur cervicale.
+En chandelle, le corps est à l’envers, la gorge exposée, 
+l’esprit confus, et l’on comprend enfin ce grand proverbe sacré
+“Quand la tête touche presque le sol, il est temps de ne plus répondre aux questions sans avocat.”
+Respirez doucement, gardez les épaules stables, protégez votre nuque,
+et surtout ne forcez jamais. Les seules choses qui doivent être retournées dans cette posture sont votre corps, votre énergie et éventuellement la version officielle des faits.
     </p>
   </div>
 
@@ -498,8 +561,9 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
 
 <p>
   Le troisième œil peut être travaillé avec Adho Mukha Svanasana,
-  la posture du chien tête en bas, qui favorise le calme mental,
-  la concentration et le retour vers l’intérieur.
+  la posture du chien tête en bas,Cette posture ouvre le troisième œil, 
+  mais restez prudente si vous voyez l’oracle courir dans un champ avec un dossier sous le bras,
+  ce n’est pas une vision mystique, c’est probablement une fuite organisée.
 </p>
 
 <div class="une-photo">
@@ -508,32 +572,15 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
     <img src="chien.jpg" alt="Adho Mukha Svanasana - chien tête en bas">
     <h4>Adho Mukha Svanasana</h4>
     <p>
-      Le chien tête en bas allonge la colonne, relâche progressivement les épaules
-      et place la tête vers le bas. Cette inversion douce peut aider à calmer
-      l’agitation mentale et à recentrer l’attention.
+Cette inversion douce peut aider à calmer l’agitation mentale, à recentrer l’attention, et à comprendre que parfois, le troisième œil ne sert pas à voir l’avenir,
+ mais simplement à repérer les forces de l’ordre avant qu’elles ne frappent à la porte.Respirez profondément, gardez les mains bien ancrées au sol, 
+et souvenez-vous du proverbe sacré : “Qui baisse la tête ne médite pas toujours, parfois il prépare sa fuite.”
     </p>
   </div>
 
 </div>
 
 
-<p>
-  Le chakra coronal peut être travaillé par une pratique calme, posée et stable.
-  Ici, la posture du pigeon peut être utilisée comme posture de relâchement profond
-  avant une méditation assise, afin de calmer le corps et de préparer l’attention.
-</p>
-
-<div class="une-photo">
-
-  <div class="photo-posture">
-    <img src="pigeon.jpg" alt="Posture du pigeon pour préparer la méditation">
-    <h4>Posture du pigeon</h4>
-    <p>
-      La posture du pigeon permet de relâcher les hanches et d’installer le corps
-      dans une sensation de détente plus profonde. Elle peut servir de transition
-      avant une méditation assise liée au chakra coronal.
-    </p>
-  </div>
 
 </div>
 
@@ -546,9 +593,16 @@ seulement apres vous pourrez commencer votre séance de déblocage chakrique
       <p>
         Cette pratique relève du bien-être, du yoga et du travail corporel doux. Elle remplace
         un diagnostic médical, un traitement et un accompagnement professionnel en cas de
-        douleur persistante, malaise, fatigue extrême, anxiété intense ou symptôme inhabituel.contacter l'oracle 
+        douleur persistante, malaise, fatigue extrême, anxiété intense ou symptôme inhabituel. Contacter l'oracle
+        sauf s’il est déjà occupé à répondre à une convocation, à fuir avec un dossier sous le bras ou à nier les faits devant les forces de l’ordre.
       </p>
     </div>
+
+<p class="namaste-texte">
+  Namaste 
+</p>
+
+<img class="image-namaste" src="namaste.jpg" alt="Namaste et bienvenue dans le cours">   
 
     <div class="boutons">
       <a class="bouton" href="continuer.html">Retour vers la lumière</a>
