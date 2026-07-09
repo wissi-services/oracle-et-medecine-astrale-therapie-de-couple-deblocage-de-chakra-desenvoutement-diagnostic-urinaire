@@ -115,7 +115,19 @@
       margin-bottom: 15px;
       border: 3px outset #ffcc33;
     }
+    .une-photo {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 520px;
+  margin: 25px auto 0 auto;
+}
 
+.trois-photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 25px;
+}
     .deux-photos {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -216,7 +228,13 @@
       .deux-photos {
         grid-template-columns: 1fr;
       }
+       .trois-photos {
+  grid-template-columns: 1fr;
+}
 
+.une-photo {
+  max-width: 100%;
+}
       .photo-posture img {
         height: auto;
       }
@@ -299,7 +317,7 @@
 
 
 ####################################################################################
-        
+
 <p>
   Pour débloquer le chakra racine, Tadasana, la posture de la montagne,
   et Malasana, la posture du squat yogique, aident à renforcer l’ancrage
@@ -309,7 +327,7 @@
 <div class="deux-photos">
 
   <div class="photo-posture">
-    <img src="racine-montagne.jpg" alt="Tadasana - posture de la montagne">
+    <img src="montagne (2).jpg" alt="Tadasana - posture de la montagne">
     <h4>Tadasana</h4>
     <p>
       La posture de la montagne consiste à se tenir debout, les pieds bien posés au sol,
@@ -319,7 +337,7 @@
   </div>
 
   <div class="photo-posture">
-    <img src="racine-squat.jpg" alt="Malasana - squat yogique">
+    <img src="squat.jpg" alt="Malasana - squat yogique">
     <h4>Malasana</h4>
     <p>
       Le squat yogique permet de rapprocher le bassin du sol et de renforcer la sensation
@@ -330,25 +348,27 @@
 </div>
 
 ####################################################################################
-        
+
 <p>
-  Le chakra sacré bénéficie d’Utthita Trikonasana, la posture du trianglu,
-  et de Bhujangasana, la posture du cobra.
+  Le chakra sacré bénéficie d’Utthita Trikonasana, la posture du triangle,
+  de Bhujangasana, la posture du cobra, et d’Eka Pada Rajakapotasana,
+  la posture du pigeon. Ces postures travaillent l’ouverture du bassin,
+  la fluidité du mouvement et le relâchement des tensions émotionnelles.
 </p>
 
-<div class="deux-photos">
+<div class="trois-photos">
 
   <div class="photo-posture">
-    <img src="sacre-triangle.jpg" alt="Utthita Trikonasana">
+    <img src="trianglu.jpg" alt="Utthita Trikonasana - posture du triangle">
     <h4>Utthita Trikonasana</h4>
     <p>
-      La posture du trianglu ouvre les hanches, étire les flancs et aide à retrouver
-      une sensation de fluidité dans le bassin.
+      La posture du triangle étire les flancs, ouvre le bassin et aide à retrouver
+      une sensation d’espace et de fluidité dans le corps.
     </p>
   </div>
 
   <div class="photo-posture">
-    <img src="sacre-cobra.jpg" alt="Bhujangasana">
+    <img src="cobra.jpg" alt="Bhujangasana - posture du cobra">
     <h4>Bhujangasana</h4>
     <p>
       La posture du cobra ouvre l’avant du corps, stimule la respiration et soutient
@@ -356,9 +376,19 @@
     </p>
   </div>
 
+  <div class="photo-posture">
+    <img src="pigeon.jpg" alt="Eka Pada Rajakapotasana - posture du pigeon">
+    <h4>Eka Pada Rajakapotasana</h4>
+    <p>
+      La posture du pigeon agit profondément sur les hanches. Elle aide à relâcher
+      les tensions du bassin et accompagne le travail émotionnel lié au chakra sacré.
+    </p>
+  </div>
 
+</div>
 
 ####################################################################################
+
 <p>
   Pour le plexus solaire, Navasana, la posture du bateau, et Dhanurasana,
   la posture de l’arc, aident à renforcer le centre du corps, la volonté
@@ -368,7 +398,7 @@
 <div class="deux-photos">
 
   <div class="photo-posture">
-    <img src="plexus-bateau.jpg" alt="Navasana - posture du bateau">
+    <img src="bateau.jpg" alt="Navasana - posture du bateau">
     <h4>Navasana</h4>
     <p>
       La posture du bateau engage les abdominaux et demande de maintenir l’équilibre.
@@ -378,7 +408,7 @@
   </div>
 
   <div class="photo-posture">
-    <img src="plexus-arc.jpg" alt="Dhanurasana - posture de l’arc">
+    <img src="arc.jpg" alt="Dhanurasana - posture de l’arc">
     <h4>Dhanurasana</h4>
     <p>
       La posture de l’arc ouvre l’avant du corps et stimule la zone abdominale.
@@ -388,7 +418,9 @@
   </div>
 
 </div>
+
 ####################################################################################
+
 <p>
   Le chakra cardiaque s’ouvre avec Ustrasana, la posture du chameau,
   et Bakasana, la posture du corbeau, qui travaillent l’ouverture,
@@ -398,7 +430,7 @@
 <div class="deux-photos">
 
   <div class="photo-posture">
-    <img src="coeur-chameau.jpg" alt="Ustrasana - posture du chameau">
+    <img src="chameau.jpg" alt="Ustrasana - posture du chameau">
     <h4>Ustrasana</h4>
     <p>
       La posture du chameau ouvre la poitrine, étire l’avant du corps et invite
@@ -408,7 +440,7 @@
   </div>
 
   <div class="photo-posture">
-    <img src="coeur-corbeau.jpg" alt="Bakasana - posture du corbeau">
+    <img src="corbeau.jpg" alt="Bakasana - posture du corbeau">
     <h4>Bakasana</h4>
     <p>
       La posture du corbeau demande équilibre, engagement et confiance.
@@ -418,27 +450,18 @@
   </div>
 
 </div>
+
 ####################################################################################
+
 <p>
-  La gorge se travaille avec Jalandhara Bandha, le verrou de la gorge,
-  et Sarvangasana, la posture de la chandelle, en restant toujours prudente
-  avec la nuque et la respiration.
+  La gorge peut être travaillée avec Sarvangasana, la posture de la chandelle,
+  en restant toujours prudente avec la nuque, les épaules et la respiration.
 </p>
 
-<div class="deux-photos">
+<div class="une-photo">
 
   <div class="photo-posture">
-    <img src="gorge-jalandhara.jpg" alt="Jalandhara Bandha - verrou de la gorge">
-    <h4>Jalandhara Bandha</h4>
-    <p>
-      Jalandhara Bandha consiste à engager doucement la zone de la gorge
-      dans une pratique respiratoire contrôlée. Il est associé à l’écoute,
-      au calme intérieur et à la maîtrise de l’expression.
-    </p>
-  </div>
-
-  <div class="photo-posture">
-    <img src="gorge-chandelle.jpg" alt="Sarvangasana - posture de la chandelle">
+    <img src="chandelle.jpg" alt="Sarvangasana - posture de la chandelle">
     <h4>Sarvangasana</h4>
     <p>
       La chandelle inverse le corps et place l’attention sur la gorge,
@@ -448,17 +471,19 @@
   </div>
 
 </div>
+
 ####################################################################################
+
 <p>
   Le troisième œil peut être travaillé avec Adho Mukha Svanasana,
   la posture du chien tête en bas, qui favorise le calme mental,
   la concentration et le retour vers l’intérieur.
 </p>
 
-<div class="deux-photos">
+<div class="une-photo">
 
   <div class="photo-posture">
-    <img src="troisieme-oeil-chien.jpg" alt="Adho Mukha Svanasana - chien tête en bas">
+    <img src="chien.jpg" alt="Adho Mukha Svanasana - chien tête en bas">
     <h4>Adho Mukha Svanasana</h4>
     <p>
       Le chien tête en bas allonge la colonne, relâche progressivement les épaules
@@ -467,47 +492,30 @@
     </p>
   </div>
 
-  <div class="photo-posture">
-    <img src="troisieme-oeil-meditation.jpg" alt="Méditation pour le troisième œil">
-    <h4>Méditation centrée</h4>
-    <p>
-      En position assise, le regard peut rester fermé ou légèrement dirigé vers
-      l’espace entre les sourcils. Cette pratique soutient la clarté mentale,
-      l’intuition et l’observation intérieure.
-    </p>
-  </div>
+</div>
 
-</div> 
- ####################################################################################       
+####################################################################################
+
 <p>
-  Le chakra coronal peut être travaillé avec Sirsasana, la posture sur la tête,
-  ou plus simplement avec une méditation assise, surtout si l’inversion n’est
-  pas adaptée au niveau ou au corps de la personne.
+  Le chakra coronal peut être travaillé par une pratique calme, posée et stable.
+  Ici, la posture du pigeon peut être utilisée comme posture de relâchement profond
+  avant une méditation assise, afin de calmer le corps et de préparer l’attention.
 </p>
 
-<div class="deux-photos">
+<div class="une-photo">
 
   <div class="photo-posture">
-    <img src="coronal-tete-en-bas.jpg" alt="Sirsasana - posture sur la tête">
-    <h4>Sirsasana</h4>
+    <img src="pigeon.jpg" alt="Posture du pigeon pour préparer la méditation">
+    <h4>Posture du pigeon</h4>
     <p>
-      Sirsasana est une inversion avancée qui demande de la force, du contrôle
-      et une bonne préparation. Elle est associée au recul intérieur, à la présence
-      et à la verticalité, mais elle ne doit pas être forcée.
-    </p>
-  </div>
-
-  <div class="photo-posture">
-    <img src="coronal-meditation.jpg" alt="Méditation assise pour le chakra coronal">
-    <h4>Méditation assise</h4>
-    <p>
-      La méditation assise est une alternative simple et sûre. Elle permet de travailler
-      le chakra coronal par le silence, l’observation, la respiration calme et la sensation
-      de présence.
+      La posture du pigeon permet de relâcher les hanches et d’installer le corps
+      dans une sensation de détente plus profonde. Elle peut servir de transition
+      avant une méditation assise liée au chakra coronal.
     </p>
   </div>
 
 </div>
+
 ####################################################################################
 
 
